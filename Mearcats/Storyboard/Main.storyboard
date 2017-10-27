@@ -18,10 +18,10 @@
             </objects>
             <point key="canvasLocation" x="6" y="129"/>
         </scene>
-        <!--View Controller-->
+        <!--My Page View Controller-->
         <scene sceneID="pze-ek-Inz">
             <objects>
-                <viewController id="WiB-FM-Gbs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPageViewController" id="WiB-FM-Gbs" customClass="MyPageViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4QY-fz-inu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
