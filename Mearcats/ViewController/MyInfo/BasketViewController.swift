@@ -1,5 +1,5 @@
 //
-//  FavoriteViewController.swift
+//  BasketViewController.swift
 //  Mearcats
 //
 //  Created by 손은주 on 2017. 10. 28..
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class FavoriteViewController: UIPageViewController {
+class BasketViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
     
 }
