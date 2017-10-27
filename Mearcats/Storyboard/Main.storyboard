@@ -204,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="2066" y="-699"/>
         </scene>
-        <!--View Controller-->
+        <!--Company View Controller-->
         <scene sceneID="Foc-M5-06v">
             <objects>
-                <viewController id="Os8-9p-u2R" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompanyViewController" id="Os8-9p-u2R" customClass="CompanyViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wzc-iB-ddc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
