@@ -10,6 +10,11 @@ import UIKit
 
 class MainPageViewController: UIPageViewController {
 
+    private(set) lazy var orderedViewControllers: [UIViewController] = {
+        return [
+        ]
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
