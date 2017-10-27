@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class QRCameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate{
+class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate{
     
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
@@ -17,7 +17,6 @@ class QRCameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.black
         captureSession = AVCaptureSession()
         
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
@@ -81,21 +80,27 @@ class QRCameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        
-        print("Entered?")
+
         
         captureSession.stopRunning()
         
         if let metadataObject = metadataObjects.first {
-            print("Found?")
             
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+            
             found(code: stringValue)
         }
         
-        dismiss(animated: true)
+        //dismiss(animated: true)
+        if let sublayers = view.layer.sublayers {
+            for layer in sublayers {
+                if layer is AVCaptureVideoPreviewLayer {
+                    layer.removeFromSuperlayer()
+                }
+            }
+        }
         
     }
     

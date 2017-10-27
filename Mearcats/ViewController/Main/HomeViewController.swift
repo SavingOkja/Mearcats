@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
 
     @IBAction func qrAction(_ sender: UIButton) {
         
-        let camera = UIStoryboard(name: "QR", bundle: nil).instantiateViewController(withIdentifier: "QRCameraViewController") as! QRCameraViewController
+        let camera = UIStoryboard(name: "QR", bundle: nil).instantiateViewController(withIdentifier: "QRViewController") as! QRViewController
         present(camera, animated: true, completion: nil)
     }
 }
