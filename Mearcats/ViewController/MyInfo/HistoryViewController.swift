@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UIViewController, IndicatorInfoProvider {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return "History"
+    }
 }

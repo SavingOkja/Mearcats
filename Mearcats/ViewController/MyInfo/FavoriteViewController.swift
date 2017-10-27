@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class FavoriteViewController: UIViewController {
+class FavoriteViewController: UIViewController, IndicatorInfoProvider {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return "Favorite"
+    }
 }
