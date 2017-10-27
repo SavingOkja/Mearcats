@@ -75,6 +75,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OMO-BJ-YbL" secondAttribute="height" multiplier="1:1" id="Y6C-is-yQW"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="qrAction:" destination="HZP-IS-sIM" eventType="touchUpInside" id="EmR-OH-jyl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type Something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Le-pr-BQj">
                                 <rect key="frame" x="125" y="205" width="124.5" height="21"/>
