@@ -25,6 +25,8 @@
 		45A1B7E61FA39C840084BB04 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7E51FA39C840084BB04 /* FavoriteViewController.swift */; };
 		45A1B7E81FA39CC20084BB04 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7E71FA39CC20084BB04 /* HistoryViewController.swift */; };
 		45A1B7EA1FA39CE30084BB04 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7E91FA39CE30084BB04 /* BasketViewController.swift */; };
+		45A1B7EC1FA39D330084BB04 /* QRCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7EB1FA39D330084BB04 /* QRCameraViewController.swift */; };
+		45A1B7EE1FA39D500084BB04 /* QRContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7ED1FA39D500084BB04 /* QRContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		45A1B7E51FA39C840084BB04 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		45A1B7E71FA39CC20084BB04 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		45A1B7E91FA39CE30084BB04 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		45A1B7EB1FA39D330084BB04 /* QRCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraViewController.swift; sourceTree = "<group>"; };
+		45A1B7ED1FA39D500084BB04 /* QRContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 		45A1B7DA1FA39AC20084BB04 /* QR */ = {
 			isa = PBXGroup;
 			children = (
+				45A1B7EB1FA39D330084BB04 /* QRCameraViewController.swift */,
+				45A1B7ED1FA39D500084BB04 /* QRContentViewController.swift */,
 			);
 			path = QR;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				45A1B7DE1FA39B2C0084BB04 /* MyPageViewController.swift in Sources */,
 				45A1B7B11FA390B70084BB04 /* LoginViewController.swift in Sources */,
 				45A1B7E01FA39B9E0084BB04 /* ClassificationViewController.swift in Sources */,
+				45A1B7EE1FA39D500084BB04 /* QRContentViewController.swift in Sources */,
 				45A1B7E81FA39CC20084BB04 /* HistoryViewController.swift in Sources */,
 				45A1B7D31FA3956E0084BB04 /* MainPageViewController.swift in Sources */,
 				45A1B7E61FA39C840084BB04 /* FavoriteViewController.swift in Sources */,
@@ -288,6 +295,7 @@
 				45A1B7EA1FA39CE30084BB04 /* BasketViewController.swift in Sources */,
 				45A1B7AF1FA390B70084BB04 /* AppDelegate.swift in Sources */,
 				45A1B7E21FA39BD80084BB04 /* CompanyViewController.swift in Sources */,
+				45A1B7EC1FA39D330084BB04 /* QRCameraViewController.swift in Sources */,
 				45A1B7DC1FA39AF10084BB04 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
