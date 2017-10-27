@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyPageViewController: UIPageViewController {
+class MyPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

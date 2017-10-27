@@ -15,6 +15,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func facebookLoginAction(_ sender: UIButton) {
+        
+        let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageViewController") as! MainPageViewController
+        let nav = UINavigationController(rootViewController: destination)
+        
+        present(nav, animated: true, completion: nil)
     }
     
 }

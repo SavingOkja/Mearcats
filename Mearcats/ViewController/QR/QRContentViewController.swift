@@ -1,5 +1,5 @@
 //
-//  ClassificationViewController.swift
+//  QRContentViewController.swift
 //  Mearcats
 //
 //  Created by 손은주 on 2017. 10. 28..
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ClassificationViewController: UIViewController {
+class QRContentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-
 }

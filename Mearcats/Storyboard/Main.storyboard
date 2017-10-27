@@ -190,14 +190,15 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="946.77661169415296"/>
         </scene>
-        <!--View Controller-->
+        <!--My Page Inner Pager View Controller-->
         <scene sceneID="ZEI-H7-VMU">
             <objects>
-                <viewController id="emm-Q5-9xi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPageInnerPagerViewController" id="emm-Q5-9xi" customClass="MyPageInnerPagerViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCZ-8m-9S1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="477"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="dPy-fa-K71"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qG-iX-ECd" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,5 +1,5 @@
 //
-//  ClassificationViewController.swift
+//  FavoriteViewController.swift
 //  Mearcats
 //
 //  Created by 손은주 on 2017. 10. 28..
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClassificationViewController: UIViewController {
+class FavoriteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

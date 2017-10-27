@@ -21,6 +21,12 @@
 		45A1B7DE1FA39B2C0084BB04 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7DD1FA39B2C0084BB04 /* MyPageViewController.swift */; };
 		45A1B7E01FA39B9E0084BB04 /* ClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7DF1FA39B9E0084BB04 /* ClassificationViewController.swift */; };
 		45A1B7E21FA39BD80084BB04 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7E11FA39BD80084BB04 /* CompanyViewController.swift */; };
+		45A1B7F21FA3A2C80084BB04 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F11FA3A2C80084BB04 /* FavoriteViewController.swift */; };
+		45A1B7F41FA3A3C30084BB04 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F31FA3A3C30084BB04 /* HistoryViewController.swift */; };
+		45A1B7F61FA3A3CD0084BB04 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F51FA3A3CD0084BB04 /* BasketViewController.swift */; };
+		45A1B7F81FA3A3D70084BB04 /* QRCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F71FA3A3D70084BB04 /* QRCameraViewController.swift */; };
+		45A1B7FA1FA3A3E30084BB04 /* QRContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F91FA3A3E30084BB04 /* QRContentViewController.swift */; };
+		45A1B7FC1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		45A1B7DD1FA39B2C0084BB04 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		45A1B7DF1FA39B9E0084BB04 /* ClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationViewController.swift; sourceTree = "<group>"; };
 		45A1B7E11FA39BD80084BB04 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		45A1B7F11FA3A2C80084BB04 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		45A1B7F31FA3A3C30084BB04 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		45A1B7F51FA3A3CD0084BB04 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		45A1B7F71FA3A3D70084BB04 /* QRCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraViewController.swift; sourceTree = "<group>"; };
+		45A1B7F91FA3A3E30084BB04 /* QRContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRContentViewController.swift; sourceTree = "<group>"; };
+		45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageInnerPagerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +127,8 @@
 		45A1B7CE1FA3929F0084BB04 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				45A1B7DA1FA39AC20084BB04 /* QR */,
-				45A1B7D91FA39ABB0084BB04 /* MyInfo */,
+				45A1B7F01FA3A2980084BB04 /* QR */,
+				45A1B7EF1FA3A2900084BB04 /* MyInfo */,
 				45A1B7D81FA39AB60084BB04 /* Main */,
 				45A1B7B01FA390B70084BB04 /* LoginViewController.swift */,
 				45A1B7D21FA3956E0084BB04 /* MainPageViewController.swift */,
@@ -142,20 +154,26 @@
 				45A1B7DD1FA39B2C0084BB04 /* MyPageViewController.swift */,
 				45A1B7DF1FA39B9E0084BB04 /* ClassificationViewController.swift */,
 				45A1B7E11FA39BD80084BB04 /* CompanyViewController.swift */,
+				45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		45A1B7D91FA39ABB0084BB04 /* MyInfo */ = {
+		45A1B7EF1FA3A2900084BB04 /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
+				45A1B7F11FA3A2C80084BB04 /* FavoriteViewController.swift */,
+				45A1B7F31FA3A3C30084BB04 /* HistoryViewController.swift */,
+				45A1B7F51FA3A3CD0084BB04 /* BasketViewController.swift */,
 			);
 			path = MyInfo;
 			sourceTree = "<group>";
 		};
-		45A1B7DA1FA39AC20084BB04 /* QR */ = {
+		45A1B7F01FA3A2980084BB04 /* QR */ = {
 			isa = PBXGroup;
 			children = (
+				45A1B7F71FA3A3D70084BB04 /* QRCameraViewController.swift */,
+				45A1B7F91FA3A3E30084BB04 /* QRContentViewController.swift */,
 			);
 			path = QR;
 			sourceTree = "<group>";
@@ -266,12 +284,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A1B7F61FA3A3CD0084BB04 /* BasketViewController.swift in Sources */,
+				45A1B7FA1FA3A3E30084BB04 /* QRContentViewController.swift in Sources */,
+				45A1B7FC1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift in Sources */,
 				45A1B7DE1FA39B2C0084BB04 /* MyPageViewController.swift in Sources */,
 				45A1B7B11FA390B70084BB04 /* LoginViewController.swift in Sources */,
 				45A1B7E01FA39B9E0084BB04 /* ClassificationViewController.swift in Sources */,
 				45A1B7D31FA3956E0084BB04 /* MainPageViewController.swift in Sources */,
 				45A1B7AF1FA390B70084BB04 /* AppDelegate.swift in Sources */,
 				45A1B7E21FA39BD80084BB04 /* CompanyViewController.swift in Sources */,
+				45A1B7F41FA3A3C30084BB04 /* HistoryViewController.swift in Sources */,
+				45A1B7F81FA3A3D70084BB04 /* QRCameraViewController.swift in Sources */,
+				45A1B7F21FA3A2C80084BB04 /* FavoriteViewController.swift in Sources */,
 				45A1B7DC1FA39AF10084BB04 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

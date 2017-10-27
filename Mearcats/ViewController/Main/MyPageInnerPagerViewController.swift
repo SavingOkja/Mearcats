@@ -1,5 +1,5 @@
 //
-//  ClassificationViewController.swift
+//  MyPageInnerPagerViewController.swift
 //  Mearcats
 //
 //  Created by 손은주 on 2017. 10. 28..
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ClassificationViewController: UIViewController {
+class MyPageInnerPagerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
+
 
 }
