@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Favorite View Controller-->
         <scene sceneID="zpR-KN-duq">
             <objects>
-                <viewController id="WcP-Aw-JJa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoriteViewController" id="WcP-Aw-JJa" customClass="FavoriteViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kLX-rD-4jZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="311" y="-330"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="coj-j8-VZx">
             <objects>
-                <viewController id="Uzc-Af-XAG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryViewController" id="Uzc-Af-XAG" customClass="HistoryViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="74M-d9-gfF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="310" y="396"/>
         </scene>
-        <!--View Controller-->
+        <!--Basket View Controller-->
         <scene sceneID="fMK-oD-hL4">
             <objects>
-                <viewController id="RqJ-L2-fYm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BasketViewController" id="RqJ-L2-fYm" customClass="BasketViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4y-O5-plg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
