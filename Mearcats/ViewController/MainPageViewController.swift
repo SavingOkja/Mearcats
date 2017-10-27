@@ -18,15 +18,19 @@ class MainPageViewController: UIPageViewController {
         ]
     }()
     
+    var pageControl = UIPageControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dataSource = self
+        delegate = self
         
         setViewControllers([orderedViewControllers[1]],
                            direction: .forward,
                            animated: true,
                            completion: nil)
+        configurePageControl()
     }
 
     private func enrollViewController(type: String) -> UIViewController {
@@ -50,6 +54,22 @@ class MainPageViewController: UIPageViewController {
             return destination
         }
         
+    }
+    
+    func configurePageControl() {
+        // The total number of pages that are available is based on how many available colors we have.
+        
+        pageControl = UIPageControl(frame: CGRect(x: 0,
+                                                  y: 50,
+                                                  width: UIScreen.main.bounds.width,
+                                                  height: 50))
+        
+        self.pageControl.numberOfPages = orderedViewControllers.count
+        self.pageControl.currentPage = 1
+        self.pageControl.tintColor = UIColor.black
+        self.pageControl.pageIndicatorTintColor = UIColor.red
+        self.pageControl.currentPageIndicatorTintColor = UIColor.black
+        self.view.addSubview(pageControl)
     }
 }
 
@@ -102,6 +122,7 @@ extension MainPageViewController: UIPageViewControllerDataSource {
     }
 }
 
+
 extension MainPageViewController: UIPageViewControllerDelegate {
     
     func goToNextPage(animated: Bool = true, completion: ((Bool) -> Void)? = nil) {
@@ -121,5 +142,32 @@ extension MainPageViewController: UIPageViewControllerDelegate {
             }
         }
     }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
