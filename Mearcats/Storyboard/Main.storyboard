@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="127.28635682158921"/>
         </scene>
-        <!--View Controller-->
+        <!--Classification View Controller-->
         <scene sceneID="Uho-iR-UNv">
             <objects>
-                <viewController id="TNh-xs-GSx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClassificationViewController" id="TNh-xs-GSx" customClass="ClassificationViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9fd-WO-q0t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
