@@ -27,6 +27,8 @@
 		45A1B7F81FA3A3D70084BB04 /* QRCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F71FA3A3D70084BB04 /* QRCameraViewController.swift */; };
 		45A1B7FA1FA3A3E30084BB04 /* QRContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F91FA3A3E30084BB04 /* QRContentViewController.swift */; };
 		45A1B7FC1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */; };
+		69055991A7E6E611A0DE2AE0 /* Pods_MearcatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B2D9416A5AB92F45C012CD /* Pods_MearcatsTests.framework */; };
+		E9D1C155AB8162566C60382B /* Pods_Mearcats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AE05AA2B7A57321D218959 /* Pods_Mearcats.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24AE05AA2B7A57321D218959 /* Pods_Mearcats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mearcats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B2D9416A5AB92F45C012CD /* Pods_MearcatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MearcatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3358E9DD29B00DFF0EFA16F2 /* Pods-MearcatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MearcatsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests.release.xcconfig"; sourceTree = "<group>"; };
 		45A1B7AB1FA390B70084BB04 /* Mearcats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mearcats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A1B7AE1FA390B70084BB04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A1B7B01FA390B70084BB04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +69,9 @@
 		45A1B7F71FA3A3D70084BB04 /* QRCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraViewController.swift; sourceTree = "<group>"; };
 		45A1B7F91FA3A3E30084BB04 /* QRContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRContentViewController.swift; sourceTree = "<group>"; };
 		45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageInnerPagerViewController.swift; sourceTree = "<group>"; };
+		5CD1E31BAE1A785B118FF453 /* Pods-MearcatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MearcatsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9172B52FC4F293A8D078B0B6 /* Pods-Mearcats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mearcats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats.debug.xcconfig"; sourceTree = "<group>"; };
+		F3E7C6AFE275A5C8EF3CD856 /* Pods-Mearcats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mearcats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D1C155AB8162566C60382B /* Pods_Mearcats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,18 +87,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69055991A7E6E611A0DE2AE0 /* Pods_MearcatsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180054765A437975F8588C70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9172B52FC4F293A8D078B0B6 /* Pods-Mearcats.debug.xcconfig */,
+				F3E7C6AFE275A5C8EF3CD856 /* Pods-Mearcats.release.xcconfig */,
+				5CD1E31BAE1A785B118FF453 /* Pods-MearcatsTests.debug.xcconfig */,
+				3358E9DD29B00DFF0EFA16F2 /* Pods-MearcatsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		45A1B7A21FA390B70084BB04 = {
 			isa = PBXGroup;
 			children = (
 				45A1B7AD1FA390B70084BB04 /* Mearcats */,
 				45A1B7C21FA390B70084BB04 /* MearcatsTests */,
 				45A1B7AC1FA390B70084BB04 /* Products */,
+				180054765A437975F8588C70 /* Pods */,
+				868A8B3BF82CFBE337E2E51B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,6 +201,15 @@
 			path = QR;
 			sourceTree = "<group>";
 		};
+		868A8B3BF82CFBE337E2E51B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24AE05AA2B7A57321D218959 /* Pods_Mearcats.framework */,
+				25B2D9416A5AB92F45C012CD /* Pods_MearcatsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45A1B7C81FA390B70084BB04 /* Build configuration list for PBXNativeTarget "Mearcats" */;
 			buildPhases = (
+				EAA8B4D07C044F98FBF01C0B /* [CP] Check Pods Manifest.lock */,
 				45A1B7A71FA390B70084BB04 /* Sources */,
 				45A1B7A81FA390B70084BB04 /* Frameworks */,
 				45A1B7A91FA390B70084BB04 /* Resources */,
+				5421F84CDF4DD8E3BAD31BE3 /* [CP] Embed Pods Frameworks */,
+				93E4809C86F358B11295CEA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45A1B7CB1FA390B70084BB04 /* Build configuration list for PBXNativeTarget "MearcatsTests" */;
 			buildPhases = (
+				7F46C652E5E4D57F5445E060 /* [CP] Check Pods Manifest.lock */,
 				45A1B7BB1FA390B70084BB04 /* Sources */,
 				45A1B7BC1FA390B70084BB04 /* Frameworks */,
 				45A1B7BD1FA390B70084BB04 /* Resources */,
+				6FE234E10637BFD0E9E59DAF /* [CP] Embed Pods Frameworks */,
+				625AC3529F5228BD1C077D10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +316,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5421F84CDF4DD8E3BAD31BE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		625AC3529F5228BD1C077D10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE234E10637BFD0E9E59DAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F46C652E5E4D57F5445E060 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MearcatsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E4809C86F358B11295CEA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA8B4D07C044F98FBF01C0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mearcats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45A1B7A71FA390B70084BB04 /* Sources */ = {
@@ -447,6 +587,7 @@
 		};
 		45A1B7C91FA390B70084BB04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9172B52FC4F293A8D078B0B6 /* Pods-Mearcats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +603,7 @@
 		};
 		45A1B7CA1FA390B70084BB04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E7C6AFE275A5C8EF3CD856 /* Pods-Mearcats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -477,6 +619,7 @@
 		};
 		45A1B7CC1FA390B70084BB04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD1E31BAE1A785B118FF453 /* Pods-MearcatsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +637,7 @@
 		};
 		45A1B7CD1FA390B70084BB04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3358E9DD29B00DFF0EFA16F2 /* Pods-MearcatsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
