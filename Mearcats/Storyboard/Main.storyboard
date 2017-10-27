@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="-698.5007496251875"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Rpr-C0-Ccv">
             <objects>
-                <viewController id="HZP-IS-sIM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="HZP-IS-sIM" customClass="HomeViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="77x-0k-3R0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

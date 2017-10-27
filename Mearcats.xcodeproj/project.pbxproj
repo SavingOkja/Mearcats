@@ -17,6 +17,7 @@
 		45A1B7D31FA3956E0084BB04 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7D21FA3956E0084BB04 /* MainPageViewController.swift */; };
 		45A1B7D51FA3991D0084BB04 /* MyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A1B7D41FA3991D0084BB04 /* MyInfo.storyboard */; };
 		45A1B7D71FA399440084BB04 /* QR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A1B7D61FA399440084BB04 /* QR.storyboard */; };
+		45A1B7DC1FA39AF10084BB04 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7DB1FA39AF10084BB04 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		45A1B7D21FA3956E0084BB04 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		45A1B7D41FA3991D0084BB04 /* MyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyInfo.storyboard; sourceTree = "<group>"; };
 		45A1B7D61FA399440084BB04 /* QR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QR.storyboard; sourceTree = "<group>"; };
+		45A1B7DB1FA39AF10084BB04 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,9 @@
 		45A1B7CE1FA3929F0084BB04 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				45A1B7DA1FA39AC20084BB04 /* QR */,
+				45A1B7D91FA39ABB0084BB04 /* MyInfo */,
+				45A1B7D81FA39AB60084BB04 /* Main */,
 				45A1B7B01FA390B70084BB04 /* LoginViewController.swift */,
 				45A1B7D21FA3956E0084BB04 /* MainPageViewController.swift */,
 			);
@@ -122,6 +127,28 @@
 				45A1B7D61FA399440084BB04 /* QR.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		45A1B7D81FA39AB60084BB04 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				45A1B7DB1FA39AF10084BB04 /* HomeViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		45A1B7D91FA39ABB0084BB04 /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		45A1B7DA1FA39AC20084BB04 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +260,7 @@
 				45A1B7B11FA390B70084BB04 /* LoginViewController.swift in Sources */,
 				45A1B7D31FA3956E0084BB04 /* MainPageViewController.swift in Sources */,
 				45A1B7AF1FA390B70084BB04 /* AppDelegate.swift in Sources */,
+				45A1B7DC1FA39AF10084BB04 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
