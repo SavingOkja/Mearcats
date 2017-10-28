@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FacebookCore
+import FacebookLogin
 
 class LoginViewController: UIViewController {
 
@@ -46,9 +48,28 @@ class LoginViewController: UIViewController {
     
     @IBAction func facebookLoginAction(_ sender: UIButton) {
         
+        let loginManager = LoginManager()
+        
+        loginManager.logIn(readPermissions: [.email],
+                           viewController: self)
+                           { result in
+                            
+                            switch result {
+                            case .success( _, _, let accessToken):
+                                
+                                print(accessToken)
+                            case .failed(let error):
+                                
+                                print(error)
+                            case .cancelled: break
+                            }
+        }
+        
+        /*
         let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageViewController") as! MainPageViewController
         
         present(destination, animated: true, completion: nil)
+         */
     }
     
 }
