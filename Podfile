@@ -10,6 +10,7 @@ target 'Mearcats' do
   pod 'XLPagerTabStrip', '~> 8.0'
   pod 'Alamofire'
   pod 'AlamofireObjectMapper'
+  pod 'AlamofireImage'
   pod 'ObjectMapper'
   pod 'FacebookCore'
   pod 'FacebookLogin'

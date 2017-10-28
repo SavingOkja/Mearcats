@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.5.1)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
   - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
@@ -39,6 +41,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage
   - AlamofireObjectMapper
   - FacebookCore
   - FacebookLogin
@@ -50,6 +53,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
@@ -64,6 +68,6 @@ SPEC CHECKSUMS:
   RealmSwift: 44a7090b16d1b22a406c6bf129bdd602db1bbecc
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
 
-PODFILE CHECKSUM: 5d9ef23700848283e48c57cbf6b922be071dd614
+PODFILE CHECKSUM: bd18654166081f82962bdf070ed6034987aee084
 
 COCOAPODS: 1.3.1
