@@ -53,10 +53,57 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JfT-ID-i6Z"/>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="7BD-v2-8XA" id="Ltb-qv-w3V"/>
+                        <outlet property="cancelView" destination="fHu-tH-g4S" id="Ry8-aa-kdD"/>
+                        <outlet property="qrImageView" destination="3dU-TS-f3m" id="ZKR-Ch-2U3"/>
+                        <outlet property="qrView" destination="cDs-y1-UOg" id="tFS-0T-Dds"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W28-Qx-w9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="fHu-tH-g4S">
+                    <rect key="frame" x="0.0" y="0.0" width="124" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BD-v2-8XA">
+                            <rect key="frame" x="52" y="54" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="1y5-Ph-Gm2"/>
+                                <constraint firstAttribute="height" constant="20" id="uXZ-sk-82g"/>
+                            </constraints>
+                            <state key="normal" image="cancel-x"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7BD-v2-8XA" firstAttribute="centerY" secondItem="fHu-tH-g4S" secondAttribute="centerY" id="6fS-UR-YML"/>
+                        <constraint firstItem="7BD-v2-8XA" firstAttribute="centerX" secondItem="fHu-tH-g4S" secondAttribute="centerX" id="sO1-5d-5Ic"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="SXo-Xx-nBC"/>
+                </view>
+                <view contentMode="scaleToFill" id="cDs-y1-UOg">
+                    <rect key="frame" x="0.0" y="0.0" width="311" height="274"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qRcode" translatesAutoresizingMaskIntoConstraints="NO" id="3dU-TS-f3m">
+                            <rect key="frame" x="0.0" y="0.0" width="311" height="274"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3dU-TS-f3m" firstAttribute="leading" secondItem="Ya8-e7-hjT" secondAttribute="leading" id="gcU-Dx-kUn"/>
+                        <constraint firstItem="Ya8-e7-hjT" firstAttribute="bottom" secondItem="3dU-TS-f3m" secondAttribute="bottom" id="j9Y-Je-rQl"/>
+                        <constraint firstItem="3dU-TS-f3m" firstAttribute="top" secondItem="Ya8-e7-hjT" secondAttribute="top" id="koJ-rL-Itx"/>
+                        <constraint firstItem="Ya8-e7-hjT" firstAttribute="trailing" secondItem="3dU-TS-f3m" secondAttribute="trailing" id="zKa-FA-bGd"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Ya8-e7-hjT"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="242" y="-242"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cancel-x" width="256" height="256"/>
+        <image name="qRcode" width="243" height="248"/>
+    </resources>
 </document>
