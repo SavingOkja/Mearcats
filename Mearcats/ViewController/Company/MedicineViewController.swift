@@ -18,10 +18,32 @@ class MedicineViewController: UIViewController, IndicatorInfoProvider, UICollect
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        getCompanies()
     }
+    
+    let manager: HTTPManager = HTTPManager.shared
+    var companies: [TinyCompany] = []
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return "Medicine"
+    }
+    
+    func getCompanies() {
+        
+        manager.getCompanies { result in
+            switch result {
+            case .success(let value):
+                
+                self.companies =  value.companies.filter {
+                    $0.id % 2 == 0
+                    }.sorted { $0.id > $1.id }
+                self.collectionView.reloadData()
+            case .failure(let error):
+                
+                print(error)
+            }
+        }
     }
     
     /// UICollectionView Delegate Methods.
@@ -37,12 +59,14 @@ class MedicineViewController: UIViewController, IndicatorInfoProvider, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return companies.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let item = companies[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoriteCollectionViewCell", for: indexPath) as! FavoriteCollectionViewCell
         cell.imageView.image = UIImage(named: "mblogthumb3PhinfNaver")
+        cell.companyLabel.text = item.name
         return cell
     }
 }

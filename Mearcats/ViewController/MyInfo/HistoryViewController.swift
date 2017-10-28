@@ -16,15 +16,35 @@ class HistoryViewController: UIViewController,
     
     @IBOutlet weak var tableView: UITableView!
     
+    let manager: HTTPManager = HTTPManager.shared
+    var companies: [TinyCompany] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        getCompanies()
     }
 
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return "History"
+    }
+    
+    func getCompanies() {
+        
+        manager.getCompanies { result in
+            switch result {
+            case .success(let value):
+                
+                self.companies =  value.companies
+                self.tableView.reloadData()
+            case .failure(let error):
+                
+                print(error)
+            }
+        }
     }
     
     /// UITableView Delegate Methods.
@@ -38,11 +58,19 @@ class HistoryViewController: UIViewController,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return companies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = companies[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell") as! HistoryTableViewCell
+        
+        cell.productImageView.image = UIImage(named: "mblogthumb3PhinfNaver")
+        cell.productLabel.text = item.name
+        cell.companyLabel.text = ""
+        
+        
+        
         return cell
     }
 }

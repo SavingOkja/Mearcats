@@ -8,6 +8,7 @@
 
 import UIKit
 import XLPagerTabStrip
+import AlamofireImage
 
 class FoodViewController: UIViewController,
                           IndicatorInfoProvider,
@@ -16,15 +17,35 @@ class FoodViewController: UIViewController,
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let manager: HTTPManager = HTTPManager.shared
+    var companies: [TinyCompany] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        getCompanies()
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return "Food"
+    }
+    
+    func getCompanies() {
+        
+        manager.getCompanies { result in
+            switch result {
+            case .success(let value):
+                
+                self.companies =  value.companies
+                self.collectionView.reloadData()
+            case .failure(let error):
+                
+                print(error)
+            }
+        }
     }
     
     /// UICollectionView Delegate Methods.
@@ -40,12 +61,17 @@ class FoodViewController: UIViewController,
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return companies.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let item = companies[indexPath.row]
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoriteCollectionViewCell", for: indexPath) as! FavoriteCollectionViewCell
+        
         cell.imageView.image = UIImage(named: "mblogthumb3PhinfNaver")
+        cell.companyLabel.text = item.name
+        
         return cell
     }
 }
