@@ -15,6 +15,7 @@ target 'Mearcats' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'Presentr'
+  pod 'RealmSwift'
 
   target 'MearcatsTests' do
     inherit! :search_paths
