@@ -9,6 +9,8 @@
 import UIKit
 import FacebookCore
 import FacebookLogin
+import ObjectMapper
+import AlamofireObjectMapper
 
 class LoginViewController: UIViewController {
 
@@ -19,6 +21,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
+    
+    let manager = HTTPManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,18 +50,41 @@ class LoginViewController: UIViewController {
         
     }
     
+    func login(with fbtoken: String, imageURL: String) {
+        
+        manager.login(with: fbtoken,
+                      imageURL: imageURL)
+        { result in
+            
+            switch result {
+            case .success(let value):
+                
+                print(Mapper().toJSON(value))
+            case .failure(let error):
+                
+                print(error)
+            }
+        }
+        
+    }
+    
     @IBAction func facebookLoginAction(_ sender: UIButton) {
         
         let loginManager = LoginManager()
         
-        loginManager.logIn(readPermissions: [.email],
+        loginManager.logIn(readPermissions: [.email, .publicProfile],
                            viewController: self)
                            { result in
                             
                             switch result {
-                            case .success( _, _, let accessToken):
+                            case .success(_, _, let accessToken):
+                                guard let userId = accessToken.userId else { return }
                                 
-                                print(accessToken)
+                                self.login(
+                                    with: accessToken.authenticationToken,
+                                   imageURL: "http://graph.facebook.com/\(userId)/picture?type=large"
+                                )
+                                
                             case .failed(let error):
                                 
                                 print(error)

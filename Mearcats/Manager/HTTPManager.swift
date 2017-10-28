@@ -12,6 +12,8 @@ var baseUrlString: String = "http://35.199.171.150"
 
 class HTTPManager {
     
+    static let shared = HTTPManager()
+    
     public init() {}
     
     public typealias HTTPHeader = [String: String]
