@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		450E41411FA4B1F000779C0C /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E41401FA4B1F000779C0C /* HTTPManager.swift */; };
 		450E41431FA4B28B00779C0C /* MemberAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E41421FA4B28B00779C0C /* MemberAPI.swift */; };
+		450E41461FA4B34900779C0C /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E41451FA4B34900779C0C /* Member.swift */; };
 		45449FFA1FA4A17F00455D35 /* TextSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45449FF91FA4A17F00455D35 /* TextSearchViewController.swift */; };
 		45610A261FA4517C00C73415 /* CompanyInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */; };
 		45610A291FA4523F00C73415 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A281FA4523F00C73415 /* FoodViewController.swift */; };
@@ -59,6 +60,7 @@
 		3358E9DD29B00DFF0EFA16F2 /* Pods-MearcatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MearcatsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests.release.xcconfig"; sourceTree = "<group>"; };
 		450E41401FA4B1F000779C0C /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		450E41421FA4B28B00779C0C /* MemberAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberAPI.swift; sourceTree = "<group>"; };
+		450E41451FA4B34900779C0C /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		45449FF91FA4A17F00455D35 /* TextSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSearchViewController.swift; sourceTree = "<group>"; };
 		45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInnerPagerViewController.swift; sourceTree = "<group>"; };
 		45610A281FA4523F00C73415 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		450E41441FA4B33500779C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				450E41451FA4B34900779C0C /* Member.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		45610A271FA4522F00C73415 /* Company */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +187,7 @@
 				45A1B7B71FA390B70084BB04 /* LaunchScreen.storyboard */,
 				45A1B7AE1FA390B70084BB04 /* AppDelegate.swift */,
 				45A1B7B51FA390B70084BB04 /* Assets.xcassets */,
+				450E41441FA4B33500779C0C /* Model */,
 				450E413F1FA4B1BC00779C0C /* Manager */,
 				45A1B7FD1FA429E50084BB04 /* Extension */,
 				45A1B7CF1FA392B60084BB04 /* Storyboard */,
@@ -515,6 +526,7 @@
 				45A1B7F81FA3A3D70084BB04 /* QRViewController.swift in Sources */,
 				45A1B7F21FA3A2C80084BB04 /* FavoriteViewController.swift in Sources */,
 				45A1B7DC1FA39AF10084BB04 /* HomeViewController.swift in Sources */,
+				450E41461FA4B34900779C0C /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
