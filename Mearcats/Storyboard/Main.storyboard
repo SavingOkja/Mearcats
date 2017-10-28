@@ -320,13 +320,44 @@
                     <view key="view" contentMode="scaleToFill" id="n3x-d0-jjs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="sBR-JA-jls">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="uT5-rd-77h"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skt-Yz-Qm0">
+                                <rect key="frame" x="0.0" y="130" width="375" height="537"/>
+                                <connections>
+                                    <segue destination="bXX-8J-Mux" kind="embed" id="AhO-9z-WlW"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtL-RO-YJ2">
+                                <rect key="frame" x="115" y="77" width="146.5" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sBR-JA-jls" firstAttribute="trailing" secondItem="FpT-Bl-16y" secondAttribute="trailing" id="Btx-ml-OVe"/>
+                            <constraint firstItem="skt-Yz-Qm0" firstAttribute="trailing" secondItem="FpT-Bl-16y" secondAttribute="trailing" id="F08-Lb-dAG"/>
+                            <constraint firstItem="sBR-JA-jls" firstAttribute="leading" secondItem="FpT-Bl-16y" secondAttribute="leading" id="GaG-LM-sa8"/>
+                            <constraint firstItem="skt-Yz-Qm0" firstAttribute="leading" secondItem="FpT-Bl-16y" secondAttribute="leading" id="Hcq-4s-8zA"/>
+                            <constraint firstItem="xtL-RO-YJ2" firstAttribute="centerX" secondItem="n3x-d0-jjs" secondAttribute="centerX" id="SaW-vg-3Ae"/>
+                            <constraint firstItem="skt-Yz-Qm0" firstAttribute="top" secondItem="xtL-RO-YJ2" secondAttribute="bottom" constant="30" id="VlX-14-ZaN"/>
+                            <constraint firstItem="sBR-JA-jls" firstAttribute="top" secondItem="n3x-d0-jjs" secondAttribute="top" id="mEW-fS-yys"/>
+                            <constraint firstItem="skt-Yz-Qm0" firstAttribute="top" secondItem="sBR-JA-jls" secondAttribute="bottom" id="uFc-Nz-wWw"/>
+                            <constraint firstItem="FpT-Bl-16y" firstAttribute="bottom" secondItem="skt-Yz-Qm0" secondAttribute="bottom" id="xxM-k9-0Yr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FpT-Bl-16y"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrg-91-LNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2084" y="947"/>
+            <point key="canvasLocation" x="2208.8000000000002" y="946.77661169415296"/>
         </scene>
         <!--My Page Inner Pager View Controller-->
         <scene sceneID="ZEI-H7-VMU">
@@ -342,6 +373,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qG-iX-ECd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2066" y="-699"/>
+        </scene>
+        <!--Company Inner Pager View Controller-->
+        <scene sceneID="hPk-wW-E5y">
+            <objects>
+                <viewController storyboardIdentifier="CompanyInnerPagerViewController" id="bXX-8J-Mux" customClass="CompanyInnerPagerViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nng-uy-BkX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddh-f5-udB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3103" y="947"/>
         </scene>
     </scenes>
     <resources>

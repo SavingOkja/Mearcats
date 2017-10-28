@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45610A261FA4517C00C73415 /* CompanyPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A251FA4517C00C73415 /* CompanyPagerViewController.swift */; };
+		45610A261FA4517C00C73415 /* CompanyInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */; };
 		45610A291FA4523F00C73415 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A281FA4523F00C73415 /* FoodViewController.swift */; };
 		45610A2B1FA4524C00C73415 /* ClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A2A1FA4524C00C73415 /* ClothesViewController.swift */; };
 		45610A2D1FA4525A00C73415 /* CosmeticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A2C1FA4525A00C73415 /* CosmeticsViewController.swift */; };
@@ -34,6 +34,7 @@
 		45A1B7F81FA3A3D70084BB04 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F71FA3A3D70084BB04 /* QRViewController.swift */; };
 		45A1B7FC1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */; };
 		45A1B7FF1FA429F30084BB04 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7FE1FA429F30084BB04 /* UIViewExtension.swift */; };
+		45CE2E651FA45BC700D90CC4 /* CompanyPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CE2E641FA45BC700D90CC4 /* CompanyPagerViewController.swift */; };
 		69055991A7E6E611A0DE2AE0 /* Pods_MearcatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B2D9416A5AB92F45C012CD /* Pods_MearcatsTests.framework */; };
 		E9D1C155AB8162566C60382B /* Pods_Mearcats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AE05AA2B7A57321D218959 /* Pods_Mearcats.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +53,7 @@
 		24AE05AA2B7A57321D218959 /* Pods_Mearcats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mearcats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B2D9416A5AB92F45C012CD /* Pods_MearcatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MearcatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3358E9DD29B00DFF0EFA16F2 /* Pods-MearcatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MearcatsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests.release.xcconfig"; sourceTree = "<group>"; };
-		45610A251FA4517C00C73415 /* CompanyPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPagerViewController.swift; sourceTree = "<group>"; };
+		45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInnerPagerViewController.swift; sourceTree = "<group>"; };
 		45610A281FA4523F00C73415 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		45610A2A1FA4524C00C73415 /* ClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesViewController.swift; sourceTree = "<group>"; };
 		45610A2C1FA4525A00C73415 /* CosmeticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		45A1B7F71FA3A3D70084BB04 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageInnerPagerViewController.swift; sourceTree = "<group>"; };
 		45A1B7FE1FA429F30084BB04 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		45CE2E641FA45BC700D90CC4 /* CompanyPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPagerViewController.swift; sourceTree = "<group>"; };
 		5CD1E31BAE1A785B118FF453 /* Pods-MearcatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MearcatsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9172B52FC4F293A8D078B0B6 /* Pods-Mearcats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mearcats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats.debug.xcconfig"; sourceTree = "<group>"; };
 		F3E7C6AFE275A5C8EF3CD856 /* Pods-Mearcats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mearcats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,7 +209,8 @@
 				45A1B7DF1FA39B9E0084BB04 /* ClassificationViewController.swift */,
 				45A1B7E11FA39BD80084BB04 /* CompanyViewController.swift */,
 				45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */,
-				45610A251FA4517C00C73415 /* CompanyPagerViewController.swift */,
+				45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */,
+				45CE2E641FA45BC700D90CC4 /* CompanyPagerViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -473,11 +476,12 @@
 				45A1B7E01FA39B9E0084BB04 /* ClassificationViewController.swift in Sources */,
 				45A1B7D31FA3956E0084BB04 /* MainPageViewController.swift in Sources */,
 				45610A2B1FA4524C00C73415 /* ClothesViewController.swift in Sources */,
-				45610A261FA4517C00C73415 /* CompanyPagerViewController.swift in Sources */,
+				45610A261FA4517C00C73415 /* CompanyInnerPagerViewController.swift in Sources */,
 				45A1B7AF1FA390B70084BB04 /* AppDelegate.swift in Sources */,
 				45A1B7E21FA39BD80084BB04 /* CompanyViewController.swift in Sources */,
 				45A1B7F41FA3A3C30084BB04 /* HistoryViewController.swift in Sources */,
 				45A1B7FF1FA429F30084BB04 /* UIViewExtension.swift in Sources */,
+				45CE2E651FA45BC700D90CC4 /* CompanyPagerViewController.swift in Sources */,
 				45A1B7F81FA3A3D70084BB04 /* QRViewController.swift in Sources */,
 				45A1B7F21FA3A2C80084BB04 /* FavoriteViewController.swift in Sources */,
 				45A1B7DC1FA39AF10084BB04 /* HomeViewController.swift in Sources */,

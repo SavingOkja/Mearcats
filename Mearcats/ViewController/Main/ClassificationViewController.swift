@@ -25,6 +25,14 @@ class ClassificationViewController: UIViewController,
 
     /// UICollectionView Delegate Methods.
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CompanyPagerViewController")
+        let nav = UINavigationController(rootViewController: destination)
+        
+        present(nav, animated: true, completion: nil)
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
