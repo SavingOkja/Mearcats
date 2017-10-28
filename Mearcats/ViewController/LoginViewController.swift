@@ -11,6 +11,8 @@ import FacebookCore
 import FacebookLogin
 import ObjectMapper
 import AlamofireObjectMapper
+import RealmSwift
+import Realm
 
 class LoginViewController: UIViewController {
 
@@ -35,6 +37,8 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        let realm = try! Realm()
+        
         sleep(UInt32(1))
         
         UIView.animate(withDuration: 1, animations: {
@@ -46,8 +50,16 @@ class LoginViewController: UIViewController {
             self.signView.isHidden = false
             self.orLabel.isHidden = false
             self.fbButton.isHidden = false
+            
+            if realm.objects(TokenResult.self).first != nil {
+
+                let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageViewController") as! MainPageViewController
+                
+                self.present(destination, animated: true, completion: nil)
+                
+                return
+            }
         }
-        
     }
     
     func login(with fbtoken: String, imageURL: String) {
@@ -59,7 +71,18 @@ class LoginViewController: UIViewController {
             switch result {
             case .success(let value):
                 
-                print(Mapper().toJSON(value))
+                let realm = try! Realm()
+                
+                try! realm.write {
+                    print("write success")
+                    realm.add(value)
+                }
+                
+                 let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageViewController") as! MainPageViewController
+                 
+                 self.present(destination, animated: true, completion: nil)
+ 
+                
             case .failure(let error):
                 
                 print(error)
@@ -91,12 +114,6 @@ class LoginViewController: UIViewController {
                             case .cancelled: break
                             }
         }
-        
-        /*
-        let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageViewController") as! MainPageViewController
-        
-        present(destination, animated: true, completion: nil)
-         */
     }
     
 }

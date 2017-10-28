@@ -8,11 +8,13 @@
 
 import Foundation
 import ObjectMapper
+import Realm
+import RealmSwift
 
-class TokenResult: Mappable {
-    var result: Bool = false
-    var msg: String = ""
-    var token: String = ""
+class TokenResult: Object, Mappable{
+    @objc var result: Bool = false
+    @objc var msg: String = ""
+    @objc var token: String = ""
     
     required convenience init?(map: Map) {
         self.init()

@@ -24,6 +24,8 @@ extension HTTPManager {
             "img": imageURL
         ]
         
+        print(params)
+        
         Alamofire.request(url,
                           method: .post,
                           parameters: params,

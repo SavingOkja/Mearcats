@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RealmSwift
+import Realm
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
@@ -22,6 +24,16 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        
+        let realm = try! Realm()
+        if let token = realm.objects(TokenResult.self).first {
+            
+            print("token exist: \(token)")
+        } else {
+            
+            print("token not exist.")
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
