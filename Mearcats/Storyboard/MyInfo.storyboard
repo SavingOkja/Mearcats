@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4eW-GR-SCX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cWh-YF-gxH">
                                     <size key="itemSize" width="111" height="152"/>
@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bcC-lH-q2b">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavoriteCollectionViewCell" id="bcC-lH-q2b" customClass="FavoriteCollectionViewCell" customModule="Mearcats" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="111" height="152"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -37,6 +37,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-7o-IKg">
                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
+                                                    <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="SUP-7o-IKg" secondAttribute="height" multiplier="1:1" id="uvk-Lg-Zqa"/>
                                                     </constraints>
@@ -65,6 +66,11 @@
                                             <constraint firstItem="SUP-7o-IKg" firstAttribute="leading" secondItem="bcC-lH-q2b" secondAttribute="leading" id="wUz-vY-jWa"/>
                                         </constraints>
                                         <size key="customSize" width="111" height="152"/>
+                                        <connections>
+                                            <outlet property="companyLabel" destination="Dgd-F6-q5d" id="LyU-R3-2tO"/>
+                                            <outlet property="followersLabel" destination="Zml-rI-ivy" id="BGq-Pj-hk6"/>
+                                            <outlet property="imageView" destination="SUP-7o-IKg" id="kci-pG-cdY"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -74,10 +80,13 @@
                             <constraint firstItem="4eW-GR-SCX" firstAttribute="bottom" secondItem="v8g-OH-HkQ" secondAttribute="bottom" id="BQt-FC-8wz"/>
                             <constraint firstItem="4eW-GR-SCX" firstAttribute="leading" secondItem="v8g-OH-HkQ" secondAttribute="leading" id="HuC-Ld-Q39"/>
                             <constraint firstItem="4eW-GR-SCX" firstAttribute="trailing" secondItem="v8g-OH-HkQ" secondAttribute="trailing" id="L65-Vc-FyO"/>
-                            <constraint firstItem="4eW-GR-SCX" firstAttribute="top" secondItem="kLX-rD-4jZ" secondAttribute="top" id="iHz-8N-1Pi"/>
+                            <constraint firstItem="4eW-GR-SCX" firstAttribute="top" secondItem="kLX-rD-4jZ" secondAttribute="top" constant="30" id="iHz-8N-1Pi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v8g-OH-HkQ"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="4eW-GR-SCX" id="pap-5o-y4T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jqs-E4-2O7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
