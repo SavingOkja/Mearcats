@@ -37,7 +37,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yqz-Xx-rWb">
                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
-                                                    <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Yqz-Xx-rWb" secondAttribute="height" multiplier="1:1" id="POu-m3-Jkf"/>
                                                     </constraints>
@@ -119,7 +118,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WM3-5y-Nea">
                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
-                                                    <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="WM3-5y-Nea" secondAttribute="height" multiplier="1:1" id="umX-dG-Ajg"/>
                                                     </constraints>
@@ -201,7 +199,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C5T-rd-BL8">
                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
-                                                    <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="C5T-rd-BL8" secondAttribute="height" multiplier="1:1" id="0Ec-c3-OD9"/>
                                                     </constraints>
@@ -283,7 +280,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AaV-ao-M4M">
                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
-                                                    <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="AaV-ao-M4M" secondAttribute="height" multiplier="1:1" id="gpD-RO-Rcp"/>
                                                     </constraints>
@@ -365,7 +361,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BKj-53-wYm">
                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
-                                                    <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="BKj-53-wYm" secondAttribute="height" multiplier="1:1" id="EE5-Eh-rtW"/>
                                                     </constraints>

@@ -8,6 +8,8 @@
 
 import UIKit
 
+var cameraCaptureTime: Int = 0
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

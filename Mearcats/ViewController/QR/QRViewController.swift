@@ -136,6 +136,13 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     @objc
     func capture() {
         
+        cameraCaptureTime += 1
+        
+        if cameraCaptureTime == 1 {
+            
+            
+        }
+        
         /// Remove capture layer.
         if let sublayers = view.layer.sublayers {
             for layer in sublayers {

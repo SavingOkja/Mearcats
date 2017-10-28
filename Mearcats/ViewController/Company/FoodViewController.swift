@@ -45,6 +45,7 @@ class FoodViewController: UIViewController,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoriteCollectionViewCell", for: indexPath) as! FavoriteCollectionViewCell
+        cell.imageView.image = UIImage(named: "mblogthumb3PhinfNaver")
         return cell
     }
 }
