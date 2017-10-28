@@ -13,12 +13,13 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     
     @IBOutlet var cancelView: UIView!
     @IBOutlet var qrView: UIView!
-    @IBOutlet weak var qrImageView: UIImageView!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var anotherCancelButton: UIButton!
     
     @IBOutlet weak var cartButton: UIButton!
     @IBOutlet weak var orderButton: UIButton!
+    @IBOutlet weak var captureButton: UIButton!
+    
     
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
@@ -60,11 +61,12 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         previewLayer.frame = view.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
         
-        qrView.frame = CGRect(x: 0, y: 0, width: 250, height: 250)
-        qrView.center = CGPoint(x: view.center.x, y: view.center.y)
+        qrView.frame = CGRect(x: 0, y: 0, width: 180, height: 180)
+        qrView.center = CGPoint(x: view.center.x, y: view.bounds.height - 100 )
         
         qrView.backgroundColor = UIColor.clear.withAlphaComponent(0)
-        qrImageView.backgroundColor = UIColor.clear.withAlphaComponent(0)
+        captureButton.backgroundColor = UIColor.clear.withAlphaComponent(0)
+        captureButton.addTarget(self, action: #selector(capture), for: .touchUpInside)
         
         cancelView.frame = CGRect(x: view.bounds.width-60, y: 40, width: 40, height: 30)
         cancelView.backgroundColor = UIColor.clear.withAlphaComponent(0)
@@ -117,7 +119,23 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
             found(code: stringValue)
         }
         
-        //dismiss(animated: true)
+    }
+    
+    func found(code: String) {
+        print(code)
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    @objc
+    func dismissAction() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc
+    func capture() {
         
         /// Remove capture layer.
         if let sublayers = view.layer.sublayers {
@@ -132,21 +150,6 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         qrView.removeFromSuperview()
         cancelView.removeFromSuperview()
         
-        /// Status bar.
-        
-    }
-    
-    func found(code: String) {
-        print(code)
-    }
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .portrait
-    }
-    
-    @objc
-    func dismissAction() {
-        dismiss(animated: true, completion: nil)
     }
 
 }
