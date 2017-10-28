@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45449FFA1FA4A17F00455D35 /* TextSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45449FF91FA4A17F00455D35 /* TextSearchViewController.swift */; };
 		45610A261FA4517C00C73415 /* CompanyInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */; };
 		45610A291FA4523F00C73415 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A281FA4523F00C73415 /* FoodViewController.swift */; };
 		45610A2B1FA4524C00C73415 /* ClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A2A1FA4524C00C73415 /* ClothesViewController.swift */; };
@@ -54,6 +55,7 @@
 		24AE05AA2B7A57321D218959 /* Pods_Mearcats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mearcats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B2D9416A5AB92F45C012CD /* Pods_MearcatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MearcatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3358E9DD29B00DFF0EFA16F2 /* Pods-MearcatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MearcatsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests.release.xcconfig"; sourceTree = "<group>"; };
+		45449FF91FA4A17F00455D35 /* TextSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSearchViewController.swift; sourceTree = "<group>"; };
 		45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInnerPagerViewController.swift; sourceTree = "<group>"; };
 		45610A281FA4523F00C73415 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		45610A2A1FA4524C00C73415 /* ClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */,
 				45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */,
 				45CE2E641FA45BC700D90CC4 /* CompanyPagerViewController.swift */,
+				45449FF91FA4A17F00455D35 /* TextSearchViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				45A1B7DE1FA39B2C0084BB04 /* MyPageViewController.swift in Sources */,
 				45A1B7B11FA390B70084BB04 /* LoginViewController.swift in Sources */,
 				45610A2F1FA4526600C73415 /* MedicineViewController.swift in Sources */,
+				45449FFA1FA4A17F00455D35 /* TextSearchViewController.swift in Sources */,
 				45A1B7E01FA39B9E0084BB04 /* ClassificationViewController.swift in Sources */,
 				45A1B7D31FA3956E0084BB04 /* MainPageViewController.swift in Sources */,
 				45610A2B1FA4524C00C73415 /* ClothesViewController.swift in Sources */,

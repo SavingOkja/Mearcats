@@ -17,24 +17,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utb-GN-8aP">
-                                <rect key="frame" x="120" y="318" width="134" height="30"/>
-                                <state key="normal" title="페이스북으로 연결하기"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-uV-Hyk">
+                                <rect key="frame" x="50.5" y="120" width="274" height="247"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meerkatLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XF0-JY-MU2">
+                                        <rect key="frame" x="36" y="0.0" width="202" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="1ab-bn-UKW"/>
+                                            <constraint firstAttribute="width" constant="202" id="y7k-KD-c4y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meerchatDrawing" translatesAutoresizingMaskIntoConstraints="NO" id="l6l-M7-gNC">
+                                        <rect key="frame" x="0.0" y="74" width="274" height="173"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="274" id="4Qe-tD-NeN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="uj8-7n-vMY">
+                                <rect key="frame" x="43" y="409.5" width="289" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksg-Hd-UGP">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="fRe-0t-hKZ"/>
+                                            <constraint firstAttribute="height" constant="48" id="tyG-rZ-LW9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="signUpBtn"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkg-jQ-04v">
+                                        <rect key="frame" x="149" y="0.0" width="140" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="URv-w4-q16"/>
+                                            <constraint firstAttribute="width" constant="140" id="fw2-bK-eJF"/>
+                                        </constraints>
+                                        <state key="normal" image="signInBtn"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEo-jV-98K">
+                                <rect key="frame" x="179.5" y="467.5" width="15" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUF-Y6-ZZT">
+                                <rect key="frame" x="43" y="502" width="289" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="89G-mk-gXT"/>
+                                </constraints>
+                                <state key="normal" image="signupfbBtn"/>
                                 <connections>
-                                    <action selector="facebookLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="km0-sd-Oyr"/>
+                                    <action selector="facebookLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oB9-si-Umv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Utb-GN-8aP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Cj-MI-03I"/>
-                            <constraint firstItem="Utb-GN-8aP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="poc-Wd-BpJ"/>
+                            <constraint firstItem="ZEo-jV-98K" firstAttribute="top" secondItem="uj8-7n-vMY" secondAttribute="bottom" constant="10" id="3tu-NF-GUo"/>
+                            <constraint firstItem="uj8-7n-vMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aqu-sN-gZG"/>
+                            <constraint firstItem="uj8-7n-vMY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="CgK-b2-1XO"/>
+                            <constraint firstItem="9TF-uV-Hyk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-90" id="Jga-bb-vWd"/>
+                            <constraint firstItem="9TF-uV-Hyk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLy-JG-Ora"/>
+                            <constraint firstItem="ZEo-jV-98K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MeG-Ph-xbQ"/>
+                            <constraint firstItem="iUF-Y6-ZZT" firstAttribute="top" secondItem="ZEo-jV-98K" secondAttribute="bottom" constant="15" id="VND-02-BO5"/>
+                            <constraint firstItem="iUF-Y6-ZZT" firstAttribute="trailing" secondItem="uj8-7n-vMY" secondAttribute="trailing" id="Vlz-fQ-tG0"/>
+                            <constraint firstItem="iUF-Y6-ZZT" firstAttribute="leading" secondItem="uj8-7n-vMY" secondAttribute="leading" id="ghr-9n-xyn"/>
+                            <constraint firstItem="iUF-Y6-ZZT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m6a-94-9lZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="fbButton" destination="iUF-Y6-ZZT" id="rFB-yc-tmf"/>
+                        <outlet property="meerkatsView" destination="9TF-uV-Hyk" id="WD1-tw-2Sc"/>
+                        <outlet property="orLabel" destination="ZEo-jV-98K" id="ers-XS-DlW"/>
+                        <outlet property="signInButton" destination="Rkg-jQ-04v" id="qxE-JL-tpU"/>
+                        <outlet property="signUpButton" destination="ksg-Hd-UGP" id="Evj-UB-Fmd"/>
+                        <outlet property="signView" destination="uj8-7n-vMY" id="P7q-ba-kG7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="meerchatDrawing" width="264" height="173"/>
+        <image name="meerkatLogo" width="280" height="30"/>
+        <image name="signInBtn" width="147" height="53"/>
+        <image name="signUpBtn" width="147" height="50"/>
+        <image name="signupfbBtn" width="297" height="50"/>
+    </resources>
 </document>
