@@ -8,6 +8,9 @@ target 'Mearcats' do
   # Pods for Mearcats
 
   pod 'XLPagerTabStrip', '~> 8.0'
+  pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
+  pod 'ObjectMapper'
 
   target 'MearcatsTests' do
     inherit! :search_paths
