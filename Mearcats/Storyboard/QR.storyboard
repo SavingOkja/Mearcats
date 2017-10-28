@@ -133,13 +133,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoT-Xr-Dfx">
-                                                <rect key="frame" x="21" y="572" width="333" height="1"/>
+                                                <rect key="frame" x="21" y="572" width="334" height="1"/>
                                                 <color key="backgroundColor" red="0.46666666670000001" green="0.47450980390000003" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="fWb-0N-bYR"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     The Reality of Animal Testing     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ks-4e-GcJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="     The Reality of Animal Testing     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ks-4e-GcJ">
                                                 <rect key="frame" x="70" y="564" width="235" height="17"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
@@ -161,6 +161,7 @@
                                             <constraint firstItem="S0Y-H0-Zxn" firstAttribute="leading" secondItem="F5l-S9-Egq" secondAttribute="leading" constant="20" id="I8K-PX-4cv"/>
                                             <constraint firstItem="NqJ-Tj-fO4" firstAttribute="top" secondItem="F5l-S9-Egq" secondAttribute="top" constant="90" id="IQd-5M-00E"/>
                                             <constraint firstItem="tg7-oP-ee8" firstAttribute="leading" secondItem="76n-k0-Tqt" secondAttribute="trailing" constant="8" id="JP8-Oh-faH"/>
+                                            <constraint firstItem="NoT-Xr-Dfx" firstAttribute="trailing" secondItem="Sn7-ln-3Md" secondAttribute="trailing" id="JSq-As-J99"/>
                                             <constraint firstItem="2ks-4e-GcJ" firstAttribute="centerY" secondItem="NoT-Xr-Dfx" secondAttribute="centerY" id="Lfi-hd-HJK"/>
                                             <constraint firstItem="cAb-VM-rux" firstAttribute="centerX" secondItem="F5l-S9-Egq" secondAttribute="centerX" id="MpI-qN-mV6"/>
                                             <constraint firstItem="NqJ-Tj-fO4" firstAttribute="centerX" secondItem="F5l-S9-Egq" secondAttribute="centerX" id="Q7i-M1-xp8"/>
@@ -170,7 +171,6 @@
                                             <constraint firstItem="NoT-Xr-Dfx" firstAttribute="centerX" secondItem="F5l-S9-Egq" secondAttribute="centerX" id="dG6-10-flM"/>
                                             <constraint firstItem="Jsq-tC-Pk3" firstAttribute="top" secondItem="viR-Fs-Bvs" secondAttribute="bottom" constant="10" id="dws-de-DpF"/>
                                             <constraint firstItem="aNw-bW-sla" firstAttribute="leading" secondItem="Mtb-7C-4Ql" secondAttribute="trailing" constant="8" id="e28-03-nSe"/>
-                                            <constraint firstItem="2ks-4e-GcJ" firstAttribute="centerX" secondItem="NoT-Xr-Dfx" secondAttribute="centerX" id="f4G-Wf-wia"/>
                                             <constraint firstItem="NoT-Xr-Dfx" firstAttribute="leading" secondItem="F5l-S9-Egq" secondAttribute="leading" constant="21" id="gjb-wp-IVx"/>
                                             <constraint firstItem="Puh-zI-jVk" firstAttribute="centerY" secondItem="76n-k0-Tqt" secondAttribute="centerY" id="iHo-0o-gep"/>
                                             <constraint firstItem="viR-Fs-Bvs" firstAttribute="top" secondItem="QJi-Zy-xhx" secondAttribute="top" id="jbv-Ke-9PU"/>

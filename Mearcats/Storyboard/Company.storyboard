@@ -546,8 +546,8 @@
                                                 <color key="textColor" red="0.46666666670000001" green="0.47450980390000003" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IKv-Z2-Eux">
-                                                <rect key="frame" x="21" y="572" width="335" height="1"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKv-Z2-Eux">
+                                                <rect key="frame" x="20" y="572" width="335" height="1"/>
                                                 <color key="backgroundColor" red="0.46666666670000001" green="0.47450980390000003" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="BO5-gz-bPC"/>
@@ -566,6 +566,7 @@
                                             <constraint firstItem="mt3-Y8-SCS" firstAttribute="leading" secondItem="4Hi-zQ-L52" secondAttribute="trailing" constant="8" id="5Sy-fu-P6R"/>
                                             <constraint firstItem="ndM-Jr-UOa" firstAttribute="leading" secondItem="GHs-ci-61e" secondAttribute="trailing" constant="17" id="7kR-E4-0LB"/>
                                             <constraint firstItem="5dn-2g-asg" firstAttribute="trailing" secondItem="hQx-ig-JCd" secondAttribute="trailing" id="900-AA-nAU"/>
+                                            <constraint firstItem="IKv-Z2-Eux" firstAttribute="leading" secondItem="5dn-2g-asg" secondAttribute="leading" id="CEl-oi-ReH"/>
                                             <constraint firstItem="dma-K1-mID" firstAttribute="centerX" secondItem="hdy-8C-75E" secondAttribute="centerX" id="CPG-nn-l8h"/>
                                             <constraint firstItem="dma-K1-mID" firstAttribute="top" secondItem="apE-UK-pkv" secondAttribute="bottom" constant="15" id="FKY-ij-htT"/>
                                             <constraint firstItem="qgE-g6-3Qj" firstAttribute="top" secondItem="hdy-8C-75E" secondAttribute="top" constant="90" id="GAo-IT-b4d"/>
@@ -643,41 +644,9 @@
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7A-vy-oJR">
                                 <rect key="frame" x="0.0" y="920" width="375" height="80"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgY-Sy-XqD">
-                                        <rect key="frame" x="21" y="14" width="158.5" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="kJU-iI-LGr"/>
-                                        </constraints>
-                                        <state key="normal" image="cartBtnHalf"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUv-ND-ogu">
-                                        <rect key="frame" x="195.5" y="14" width="158.5" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="dil-Vu-Izt"/>
-                                        </constraints>
-                                        <state key="normal" image="orderBtnHalf"/>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadowimg" translatesAutoresizingMaskIntoConstraints="NO" id="EXq-MO-mX6">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="4"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="4" id="9zO-J4-C2t"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="EXq-MO-mX6" secondAttribute="trailing" id="0DD-ZS-1C9"/>
-                                    <constraint firstItem="OgY-Sy-XqD" firstAttribute="centerY" secondItem="e7A-vy-oJR" secondAttribute="centerY" constant="4" id="97S-Kw-Vwi"/>
                                     <constraint firstAttribute="height" constant="80" id="B5s-dq-DvE"/>
-                                    <constraint firstAttribute="trailing" secondItem="YUv-ND-ogu" secondAttribute="trailing" constant="21" id="Dch-k8-DF3"/>
-                                    <constraint firstItem="YUv-ND-ogu" firstAttribute="leading" secondItem="OgY-Sy-XqD" secondAttribute="trailing" constant="16" id="Eet-cs-AOI"/>
-                                    <constraint firstItem="EXq-MO-mX6" firstAttribute="leading" secondItem="e7A-vy-oJR" secondAttribute="leading" id="Lym-1q-skJ"/>
-                                    <constraint firstItem="OgY-Sy-XqD" firstAttribute="height" secondItem="YUv-ND-ogu" secondAttribute="height" id="TnO-Zs-fSz"/>
-                                    <constraint firstItem="YUv-ND-ogu" firstAttribute="centerY" secondItem="e7A-vy-oJR" secondAttribute="centerY" constant="4" id="VKe-V5-TQT"/>
-                                    <constraint firstItem="OgY-Sy-XqD" firstAttribute="width" secondItem="YUv-ND-ogu" secondAttribute="width" id="Z1e-WY-P4A"/>
-                                    <constraint firstItem="EXq-MO-mX6" firstAttribute="top" secondItem="e7A-vy-oJR" secondAttribute="top" id="aTk-FP-88i"/>
-                                    <constraint firstItem="OgY-Sy-XqD" firstAttribute="leading" secondItem="e7A-vy-oJR" secondAttribute="leading" constant="21" id="oa0-ek-eJR"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -703,8 +672,5 @@
     <resources>
         <image name="bg" width="375" height="667"/>
         <image name="cancel-x" width="256" height="256"/>
-        <image name="cartBtnHalf" width="513" height="171"/>
-        <image name="orderBtnHalf" width="513" height="171"/>
-        <image name="shadowimg" width="1080" height="28"/>
     </resources>
 </document>
