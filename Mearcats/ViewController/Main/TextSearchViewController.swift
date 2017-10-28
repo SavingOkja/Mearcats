@@ -22,6 +22,11 @@ class TextSearchViewController: UIViewController,
         tableView.dataSource = self
     }
     
+    @IBAction func dismissAction(_ sender: UIButton) {
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     /// UITableView Delegate Methods.
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -30,6 +35,10 @@ class TextSearchViewController: UIViewController,
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 103
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
