@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -99,13 +100,82 @@
                     <view key="view" contentMode="scaleToFill" id="74M-d9-gfF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96470588239999999" green="0.52156862749999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJ2-5A-3as">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryTableViewCell" rowHeight="87" id="x5T-U7-pN8" customClass="HistoryTableViewCell" customModule="Mearcats" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x5T-U7-pN8" id="o0X-FB-phH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r8a-UA-BTY">
+                                                    <rect key="frame" x="31" y="16" width="55" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="55" id="30z-Bi-kGV"/>
+                                                        <constraint firstAttribute="height" constant="55" id="tPu-ls-F03"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhY-0v-AxC">
+                                                    <rect key="frame" x="101" y="24" width="54.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-Do-Rfq">
+                                                    <rect key="frame" x="101" y="47" width="57.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpV-va-vdy">
+                                                    <rect key="frame" x="321" y="49.5" width="23" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="r8a-UA-BTY" firstAttribute="centerY" secondItem="o0X-FB-phH" secondAttribute="centerY" id="5BI-ee-zAZ"/>
+                                                <constraint firstItem="fmH-Do-Rfq" firstAttribute="leading" secondItem="nhY-0v-AxC" secondAttribute="leading" id="AIS-hI-ex7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hpV-va-vdy" secondAttribute="trailing" constant="23" id="BIF-gU-7PH"/>
+                                                <constraint firstItem="fmH-Do-Rfq" firstAttribute="top" secondItem="nhY-0v-AxC" secondAttribute="bottom" constant="5" id="H89-Gy-jAM"/>
+                                                <constraint firstItem="nhY-0v-AxC" firstAttribute="top" secondItem="r8a-UA-BTY" secondAttribute="top" constant="8" id="QBO-RC-cGL"/>
+                                                <constraint firstItem="hpV-va-vdy" firstAttribute="centerY" secondItem="fmH-Do-Rfq" secondAttribute="centerY" id="Uje-en-coe"/>
+                                                <constraint firstItem="nhY-0v-AxC" firstAttribute="leading" secondItem="r8a-UA-BTY" secondAttribute="trailing" constant="15" id="beP-T0-Vee"/>
+                                                <constraint firstItem="r8a-UA-BTY" firstAttribute="leading" secondItem="o0X-FB-phH" secondAttribute="leadingMargin" constant="23" id="oPR-3V-xfa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="companyLabel" destination="fmH-Do-Rfq" id="2S7-v6-cHM"/>
+                                            <outlet property="dateLabel" destination="hpV-va-vdy" id="LWF-cL-3ch"/>
+                                            <outlet property="productImageView" destination="r8a-UA-BTY" id="pJW-dn-f5a"/>
+                                            <outlet property="productLabel" destination="nhY-0v-AxC" id="7b2-cv-aFW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pJ2-5A-3as" firstAttribute="leading" secondItem="EbQ-0O-Bp2" secondAttribute="leading" id="3BK-Oq-VRZ"/>
+                            <constraint firstItem="EbQ-0O-Bp2" firstAttribute="bottom" secondItem="pJ2-5A-3as" secondAttribute="bottom" id="7tp-9h-M70"/>
+                            <constraint firstItem="pJ2-5A-3as" firstAttribute="trailing" secondItem="EbQ-0O-Bp2" secondAttribute="trailing" id="jBb-Uu-dmZ"/>
+                            <constraint firstItem="pJ2-5A-3as" firstAttribute="top" secondItem="EbQ-0O-Bp2" secondAttribute="top" constant="30" id="xTU-AL-E4c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EbQ-0O-Bp2"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="pJ2-5A-3as" id="I2y-lb-iZ0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKo-1u-SWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="310" y="396"/>
+            <point key="canvasLocation" x="309.60000000000002" y="394.45277361319341"/>
         </scene>
         <!--Basket View Controller-->
         <scene sceneID="fMK-oD-hL4">
