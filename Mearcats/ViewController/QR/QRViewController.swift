@@ -15,6 +15,10 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     @IBOutlet var qrView: UIView!
     @IBOutlet weak var qrImageView: UIImageView!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var anotherCancelButton: UIButton!
+    
+    @IBOutlet weak var cartButton: UIButton!
+    @IBOutlet weak var orderButton: UIButton!
     
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
@@ -86,6 +90,8 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         if (captureSession?.isRunning == false) {
             captureSession.startRunning()
         }
+        
+        customizatino()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -125,14 +131,13 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         /// Remove extra views.
         qrView.removeFromSuperview()
         cancelView.removeFromSuperview()
+        
+        /// Status bar.
+        
     }
     
     func found(code: String) {
         print(code)
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -144,4 +149,15 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         dismiss(animated: true, completion: nil)
     }
 
+}
+
+extension QRViewController {
+    
+    
+    
+    func customizatino() {
+        cartButton.imageView?.contentMode = .scaleAspectFit
+        orderButton.imageView?.contentMode = .scaleAspectFit
+        anotherCancelButton.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
+    }
 }
