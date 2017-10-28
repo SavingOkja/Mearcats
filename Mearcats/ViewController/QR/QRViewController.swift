@@ -11,6 +11,15 @@ import AVFoundation
 
 class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate{
     
+    @IBOutlet var cancelView: UIView!
+    @IBOutlet var qrView: UIView!
+    @IBOutlet weak var qrImageView: UIImageView!
+    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var anotherCancelButton: UIButton!
+    
+    @IBOutlet weak var cartButton: UIButton!
+    @IBOutlet weak var orderButton: UIButton!
+    
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     
@@ -50,7 +59,20 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.frame = view.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
+        
+        qrView.frame = CGRect(x: 0, y: 0, width: 250, height: 250)
+        qrView.center = CGPoint(x: view.center.x, y: view.center.y)
+        
+        qrView.backgroundColor = UIColor.clear.withAlphaComponent(0)
+        qrImageView.backgroundColor = UIColor.clear.withAlphaComponent(0)
+        
+        cancelView.frame = CGRect(x: view.bounds.width-60, y: 40, width: 40, height: 30)
+        cancelView.backgroundColor = UIColor.clear.withAlphaComponent(0)
+        cancelButton.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
+        
         view.layer.addSublayer(previewLayer)
+        view.addSubview(qrView)
+        view.addSubview(cancelView)
         
         captureSession.startRunning()
     }
@@ -68,6 +90,8 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         if (captureSession?.isRunning == false) {
             captureSession.startRunning()
         }
+        
+        customizatino()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -94,6 +118,8 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         }
         
         //dismiss(animated: true)
+        
+        /// Remove capture layer.
         if let sublayers = view.layer.sublayers {
             for layer in sublayers {
                 if layer is AVCaptureVideoPreviewLayer {
@@ -102,18 +128,36 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
             }
         }
         
+        /// Remove extra views.
+        qrView.removeFromSuperview()
+        cancelView.removeFromSuperview()
+        
+        /// Status bar.
+        
     }
     
     func found(code: String) {
         print(code)
     }
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
+    
+    @objc
+    func dismissAction() {
+        dismiss(animated: true, completion: nil)
+    }
 
+}
+
+extension QRViewController {
+    
+    
+    
+    func customizatino() {
+        cartButton.imageView?.contentMode = .scaleAspectFit
+        orderButton.imageView?.contentMode = .scaleAspectFit
+        anotherCancelButton.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
+    }
 }

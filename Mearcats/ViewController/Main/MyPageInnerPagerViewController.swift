@@ -42,8 +42,6 @@ class MyPageInnerPagerViewController: ButtonBarPagerTabStripViewController {
         
         let history = UIStoryboard(name: "MyInfo", bundle: nil).instantiateViewController(withIdentifier: "HistoryViewController") as! HistoryViewController
         
-        let basket = UIStoryboard(name: "MyInfo", bundle: nil).instantiateViewController(withIdentifier: "BasketViewController") as! BasketViewController
-        
-        return [favorite, history, basket]
+        return [favorite, history]
     }
 }
