@@ -27,10 +27,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="mru-6g-yar">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fwa-3C-084">
-                                <rect key="frame" x="137" y="120" width="100" height="100"/>
+                                <rect key="frame" x="137" y="100" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="LML-CV-RC4"/>
@@ -49,13 +49,13 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLE-jI-Whf">
-                                <rect key="frame" x="0.0" y="290" width="375" height="377"/>
+                                <rect key="frame" x="0.0" y="270" width="375" height="397"/>
                                 <connections>
                                     <segue destination="emm-Q5-9xi" kind="embed" id="d8G-5y-ZqJ"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koa-7O-RyQ">
-                                <rect key="frame" x="23" y="41" width="25" height="25"/>
+                                <rect key="frame" x="23" y="50" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="Pw0-bl-2ZR"/>
                                     <constraint firstAttribute="height" constant="25" id="d3j-to-qe9"/>
@@ -63,7 +63,7 @@
                                 <state key="normal" image="settings"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3de-84-KXB">
-                                <rect key="frame" x="328" y="41" width="25" height="25"/>
+                                <rect key="frame" x="328" y="50" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="9JM-GC-LYG"/>
                                     <constraint firstAttribute="height" constant="25" id="e5A-LE-coR"/>
@@ -71,13 +71,13 @@
                                 <state key="normal" image="shape"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBL-Ce-Nqy">
-                                <rect key="frame" x="163.5" y="230" width="48" height="20.5"/>
+                                <rect key="frame" x="163.5" y="210" width="48" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uJW-1q-tmM">
-                                <rect key="frame" x="98" y="258.5" width="179" height="20.5"/>
+                                <rect key="frame" x="98" y="238.5" width="179" height="20.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GDN-mt-Tsr">
                                         <rect key="frame" x="0.0" y="0.0" width="84.5" height="20.5"/>
@@ -127,7 +127,7 @@
                             <constraint firstItem="XLE-jI-Whf" firstAttribute="top" secondItem="mru-6g-yar" secondAttribute="bottom" id="Dq2-5J-pai"/>
                             <constraint firstItem="XLE-jI-Whf" firstAttribute="trailing" secondItem="KfA-Nu-WsQ" secondAttribute="trailing" id="Ggi-ZE-Uk0"/>
                             <constraint firstItem="3de-84-KXB" firstAttribute="centerY" secondItem="koa-7O-RyQ" secondAttribute="centerY" id="HjY-3L-lcp"/>
-                            <constraint firstItem="koa-7O-RyQ" firstAttribute="top" secondItem="KfA-Nu-WsQ" secondAttribute="top" constant="21" id="JKf-2K-BjO"/>
+                            <constraint firstItem="koa-7O-RyQ" firstAttribute="top" secondItem="KfA-Nu-WsQ" secondAttribute="top" constant="30" id="JKf-2K-BjO"/>
                             <constraint firstItem="XLE-jI-Whf" firstAttribute="bottom" secondItem="KfA-Nu-WsQ" secondAttribute="bottom" id="WGa-G4-Fg0"/>
                             <constraint firstItem="uJW-1q-tmM" firstAttribute="top" secondItem="qBL-Ce-Nqy" secondAttribute="bottom" constant="8" id="WJ0-kh-8v9"/>
                             <constraint firstItem="KfA-Nu-WsQ" firstAttribute="trailing" secondItem="3de-84-KXB" secondAttribute="trailing" constant="22" id="eQd-np-OPf"/>
@@ -135,7 +135,7 @@
                             <constraint firstItem="fwa-3C-084" firstAttribute="centerX" secondItem="4QY-fz-inu" secondAttribute="centerX" id="fw6-DH-4v6"/>
                             <constraint firstItem="XLE-jI-Whf" firstAttribute="leading" secondItem="KfA-Nu-WsQ" secondAttribute="leading" id="pL5-zZ-teg"/>
                             <constraint firstItem="mru-6g-yar" firstAttribute="trailing" secondItem="KfA-Nu-WsQ" secondAttribute="trailing" id="xqx-2Z-RSz"/>
-                            <constraint firstItem="fwa-3C-084" firstAttribute="top" secondItem="KfA-Nu-WsQ" secondAttribute="top" constant="100" id="ziY-Ci-kOf"/>
+                            <constraint firstItem="fwa-3C-084" firstAttribute="top" secondItem="KfA-Nu-WsQ" secondAttribute="top" constant="80" id="ziY-Ci-kOf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KfA-Nu-WsQ"/>
                     </view>
@@ -314,7 +314,7 @@
             <objects>
                 <viewController storyboardIdentifier="MyPageInnerPagerViewController" id="emm-Q5-9xi" customClass="MyPageInnerPagerViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCZ-8m-9S1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="377"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="397"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dPy-fa-K71"/>
