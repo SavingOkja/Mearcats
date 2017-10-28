@@ -12,66 +12,51 @@
         <!--View Controller-->
         <scene sceneID="EsN-DU-uOk">
             <objects>
-                <viewController id="irk-Pu-Z2D" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QRViewController" id="irk-Pu-Z2D" customClass="QRViewController" customModule="Mearcats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j7P-ad-dMA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2o-0E-gIi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFV-RR-Gv7">
+                                <rect key="frame" x="188" y="607" width="187" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.86274509799999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dr9-a2-z7r"/>
+                                </constraints>
+                                <state key="normal" title="바로 결제하기"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cq-2z-QV4">
+                                <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="go0-GF-7lG"/>
+                                </constraints>
+                                <state key="normal" title="담아두기"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r2o-0E-gIi" firstAttribute="leading" secondItem="JfT-ID-i6Z" secondAttribute="leading" id="2gL-Y0-rcx"/>
+                            <constraint firstItem="BFV-RR-Gv7" firstAttribute="bottom" secondItem="JfT-ID-i6Z" secondAttribute="bottom" id="3dy-pS-cGf"/>
+                            <constraint firstItem="r2o-0E-gIi" firstAttribute="trailing" secondItem="JfT-ID-i6Z" secondAttribute="trailing" id="7pC-fa-D8S"/>
+                            <constraint firstItem="JfT-ID-i6Z" firstAttribute="trailing" secondItem="BFV-RR-Gv7" secondAttribute="trailing" id="Da9-Cz-dFU"/>
+                            <constraint firstItem="BFV-RR-Gv7" firstAttribute="leading" secondItem="7cq-2z-QV4" secondAttribute="trailing" id="Hyj-vY-pLz"/>
+                            <constraint firstItem="7cq-2z-QV4" firstAttribute="bottom" secondItem="JfT-ID-i6Z" secondAttribute="bottom" id="J97-xc-kzK"/>
+                            <constraint firstItem="7cq-2z-QV4" firstAttribute="leading" secondItem="JfT-ID-i6Z" secondAttribute="leading" id="Qdn-dW-VrK"/>
+                            <constraint firstItem="r2o-0E-gIi" firstAttribute="top" secondItem="j7P-ad-dMA" secondAttribute="top" id="bFV-Ia-acr"/>
+                            <constraint firstItem="r2o-0E-gIi" firstAttribute="bottom" secondItem="JfT-ID-i6Z" secondAttribute="bottom" id="byO-Wi-kSL"/>
+                            <constraint firstItem="BFV-RR-Gv7" firstAttribute="width" secondItem="7cq-2z-QV4" secondAttribute="width" id="kJt-Ja-BqI"/>
+                            <constraint firstItem="BFV-RR-Gv7" firstAttribute="height" secondItem="7cq-2z-QV4" secondAttribute="height" id="rG5-oH-tNJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JfT-ID-i6Z"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W28-Qx-w9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="-242"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="It5-B6-AUw">
-            <objects>
-                <viewController id="at6-bX-H9g" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c6Q-zM-MrX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7IO-Ds-ILZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-IV-QOD">
-                                <rect key="frame" x="0.0" y="607" width="187.5" height="60"/>
-                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="jAK-X0-cSE"/>
-                                </constraints>
-                                <state key="normal" title="담아두기"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NG-AO-Dk0">
-                                <rect key="frame" x="187.5" y="607" width="187.5" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.86274509799999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="SGd-GG-ek1"/>
-                                </constraints>
-                                <state key="normal" title="바로 결제하기"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="6NG-AO-Dk0" firstAttribute="height" secondItem="Dhm-IV-QOD" secondAttribute="height" id="1cA-W0-e95"/>
-                            <constraint firstItem="6NG-AO-Dk0" firstAttribute="bottom" secondItem="UvH-G0-Pl5" secondAttribute="bottom" id="5ZW-mN-AbJ"/>
-                            <constraint firstItem="6NG-AO-Dk0" firstAttribute="trailing" secondItem="UvH-G0-Pl5" secondAttribute="trailing" id="7qp-X8-VoV"/>
-                            <constraint firstItem="7IO-Ds-ILZ" firstAttribute="top" secondItem="c6Q-zM-MrX" secondAttribute="top" id="GJT-3k-Uuv"/>
-                            <constraint firstItem="7IO-Ds-ILZ" firstAttribute="bottom" secondItem="UvH-G0-Pl5" secondAttribute="bottom" id="QRN-uv-pAX"/>
-                            <constraint firstItem="Dhm-IV-QOD" firstAttribute="leading" secondItem="UvH-G0-Pl5" secondAttribute="leading" id="ViW-kk-Vy9"/>
-                            <constraint firstItem="7IO-Ds-ILZ" firstAttribute="leading" secondItem="UvH-G0-Pl5" secondAttribute="leading" id="fbr-hW-xi0"/>
-                            <constraint firstItem="6NG-AO-Dk0" firstAttribute="width" secondItem="Dhm-IV-QOD" secondAttribute="width" id="iPx-Ht-hO3"/>
-                            <constraint firstItem="7IO-Ds-ILZ" firstAttribute="trailing" secondItem="UvH-G0-Pl5" secondAttribute="trailing" id="oyi-1c-NLf"/>
-                            <constraint firstItem="Dhm-IV-QOD" firstAttribute="bottom" secondItem="UvH-G0-Pl5" secondAttribute="bottom" id="rnV-kB-Grf"/>
-                            <constraint firstItem="6NG-AO-Dk0" firstAttribute="leading" secondItem="Dhm-IV-QOD" secondAttribute="trailing" id="v20-kr-qZe"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="UvH-G0-Pl5"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bGd-ea-9RO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1218.4000000000001" y="-242.42878560719643"/>
         </scene>
     </scenes>
 </document>
