@@ -10,6 +10,7 @@
 		450E41411FA4B1F000779C0C /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E41401FA4B1F000779C0C /* HTTPManager.swift */; };
 		450E41431FA4B28B00779C0C /* MemberAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E41421FA4B28B00779C0C /* MemberAPI.swift */; };
 		450E41461FA4B34900779C0C /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E41451FA4B34900779C0C /* Member.swift */; };
+		450E414A1FA4D13F00779C0C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E41491FA4D13F00779C0C /* Token.swift */; };
 		45449FFA1FA4A17F00455D35 /* TextSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45449FF91FA4A17F00455D35 /* TextSearchViewController.swift */; };
 		45610A261FA4517C00C73415 /* CompanyInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */; };
 		45610A291FA4523F00C73415 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A281FA4523F00C73415 /* FoodViewController.swift */; };
@@ -61,6 +62,7 @@
 		450E41401FA4B1F000779C0C /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		450E41421FA4B28B00779C0C /* MemberAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberAPI.swift; sourceTree = "<group>"; };
 		450E41451FA4B34900779C0C /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		450E41491FA4D13F00779C0C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		45449FF91FA4A17F00455D35 /* TextSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSearchViewController.swift; sourceTree = "<group>"; };
 		45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInnerPagerViewController.swift; sourceTree = "<group>"; };
 		45610A281FA4523F00C73415 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				450E41451FA4B34900779C0C /* Member.swift */,
+				450E41491FA4D13F00779C0C /* Token.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				45A1B7B11FA390B70084BB04 /* LoginViewController.swift in Sources */,
 				45610A2F1FA4526600C73415 /* MedicineViewController.swift in Sources */,
 				45449FFA1FA4A17F00455D35 /* TextSearchViewController.swift in Sources */,
+				450E414A1FA4D13F00779C0C /* Token.swift in Sources */,
 				450E41411FA4B1F000779C0C /* HTTPManager.swift in Sources */,
 				45A1B7E01FA39B9E0084BB04 /* ClassificationViewController.swift in Sources */,
 				45A1B7D31FA3956E0084BB04 /* MainPageViewController.swift in Sources */,
