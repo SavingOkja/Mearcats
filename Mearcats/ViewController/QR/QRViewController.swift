@@ -15,9 +15,7 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     @IBOutlet var qrView: UIView!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var anotherCancelButton: UIButton!
-    
-    @IBOutlet weak var cartButton: UIButton!
-    @IBOutlet weak var orderButton: UIButton!
+
     @IBOutlet weak var captureButton: UIButton!
     
     
@@ -159,8 +157,6 @@ extension QRViewController {
     
     
     func customizatino() {
-        cartButton.imageView?.contentMode = .scaleAspectFit
-        orderButton.imageView?.contentMode = .scaleAspectFit
         anotherCancelButton.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
     }
 }

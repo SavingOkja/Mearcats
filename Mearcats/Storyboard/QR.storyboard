@@ -288,12 +288,7 @@
                                 <constraint firstAttribute="height" constant="100" id="NR1-dZ-kHZ"/>
                                 <constraint firstAttribute="width" constant="100" id="OI4-Oj-sTY"/>
                             </constraints>
-                            <state key="normal" image="meeerIcon-1"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="iCornerRadius">
-                                    <real key="value" value="50"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
+                            <state key="normal" image="cameraBtn"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -309,7 +304,7 @@
     </scenes>
     <resources>
         <image name="bg" width="375" height="667"/>
+        <image name="cameraBtn" width="76" height="76"/>
         <image name="cancel-x" width="256" height="256"/>
-        <image name="meeerIcon-1" width="180" height="180"/>
     </resources>
 </document>

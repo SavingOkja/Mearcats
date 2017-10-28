@@ -13,6 +13,11 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1),
+                                      execute: {
+            self.addBreathing()
+        })
     }
     
     override func viewWillAppear(_ animated: Bool) {
