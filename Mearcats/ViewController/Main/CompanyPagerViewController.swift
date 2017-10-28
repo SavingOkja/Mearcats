@@ -10,9 +10,23 @@ import UIKit
 
 class CompanyPagerViewController: UIViewController {
 
+    @IBOutlet weak var containerView: UIView!
+    
+    var index: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CompanyEmbededSegue" {
+            let embeded = segue.destination as! CompanyInnerPagerViewController
+            
+            if let index = self.index {
+                embeded.index = index
+            }
+        }
     }
 
     @IBAction func cancelAction(_ sender: UIButton) {

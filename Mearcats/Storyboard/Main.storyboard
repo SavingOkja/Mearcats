@@ -330,7 +330,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skt-Yz-Qm0">
                                 <rect key="frame" x="0.0" y="130" width="375" height="537"/>
                                 <connections>
-                                    <segue destination="bXX-8J-Mux" kind="embed" id="AhO-9z-WlW"/>
+                                    <segue destination="bXX-8J-Mux" kind="embed" identifier="CompanyEmbededSegue" id="AhO-9z-WlW"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtL-RO-YJ2">
@@ -367,6 +367,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FpT-Bl-16y"/>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="skt-Yz-Qm0" id="NEB-1t-nMv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrg-91-LNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

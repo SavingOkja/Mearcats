@@ -27,7 +27,10 @@ class ClassificationViewController: UIViewController,
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CompanyPagerViewController")
+        let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CompanyPagerViewController") as! CompanyPagerViewController
+        
+        destination.index = indexPath.row
+        
         let nav = UINavigationController(rootViewController: destination)
         
         present(nav, animated: true, completion: nil)

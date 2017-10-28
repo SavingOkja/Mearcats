@@ -14,6 +14,8 @@ class CompanyInnerPagerViewController: ButtonBarPagerTabStripViewController {
     let purpleInspireColor = UIColor(red: 212/255, green: 219/255, blue: 255/255, alpha: 1)
     let grayInspierColor = UIColor(red: 155/255, green: 155/255, blue: 155/255, alpha: 1)
     
+    var index: Int?
+    
     override func viewDidLoad() {
         // change selected bar color
         settings.style.buttonBarBackgroundColor = .white
@@ -40,6 +42,14 @@ class CompanyInnerPagerViewController: ButtonBarPagerTabStripViewController {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let index = self.index {
+            moveToViewController(at: index)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
