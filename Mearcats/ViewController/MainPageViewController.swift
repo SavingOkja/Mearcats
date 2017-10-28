@@ -60,7 +60,7 @@ class MainPageViewController: UIPageViewController {
         // The total number of pages that are available is based on how many available colors we have.
         
         pageControl = UIPageControl(frame: CGRect(x: 0,
-                                                  y: 50,
+                                                  y: 30,
                                                   width: UIScreen.main.bounds.width,
                                                   height: 50))
         
