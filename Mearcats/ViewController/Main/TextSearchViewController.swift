@@ -43,6 +43,7 @@ class TextSearchViewController: UIViewController,
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TextSearchTableViewCell", for: indexPath) as! TextSearchTableViewCell
+        cell.companyImageView.image = UIImage(named: "mblogthumb3PhinfNaver")
         return cell
     }
 }
