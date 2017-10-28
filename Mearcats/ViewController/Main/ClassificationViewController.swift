@@ -19,6 +19,8 @@ class ClassificationViewController: UIViewController,
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        collectionView.backgroundColor = UIColor.clear.withAlphaComponent(0)
     }
 
     /// UICollectionView Delegate Methods.
@@ -33,6 +35,8 @@ class ClassificationViewController: UIViewController,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClassificationCollectionViewCell", for: indexPath) as! ClassificationCollectionViewCell
+        
+        cell.imageView.image = UIImage(named: "group2")
         
         return cell
         
