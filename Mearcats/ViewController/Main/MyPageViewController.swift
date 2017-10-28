@@ -14,4 +14,6 @@ class MyPageViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    
 }

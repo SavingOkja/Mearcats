@@ -11,7 +11,7 @@ import XLPagerTabStrip
 
 class MyPageInnerPagerViewController: ButtonBarPagerTabStripViewController {
 
-    let purpleInspireColor = UIColor(red:0.13, green:0.03, blue:0.25, alpha:1.0)
+    let purpleInspireColor = UIColor(red: 212/255, green: 219/255, blue: 255/255, alpha: 1)
     
     override func viewDidLoad() {
         // change selected bar color
