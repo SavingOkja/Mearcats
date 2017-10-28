@@ -19,9 +19,22 @@ class ClassificationViewController: UIViewController,
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        collectionView.backgroundColor = UIColor.clear.withAlphaComponent(0)
     }
 
     /// UICollectionView Delegate Methods.
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CompanyPagerViewController") as! CompanyPagerViewController
+        
+        destination.index = indexPath.row
+        
+        let nav = UINavigationController(rootViewController: destination)
+        
+        present(nav, animated: true, completion: nil)
+    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -33,6 +46,8 @@ class ClassificationViewController: UIViewController,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClassificationCollectionViewCell", for: indexPath) as! ClassificationCollectionViewCell
+        
+        cell.imageView.image = UIImage(named: "group2")
         
         return cell
         

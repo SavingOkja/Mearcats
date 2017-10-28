@@ -1,5 +1,5 @@
 //
-//  MyPageInnerPagerViewController.swift
+//  CompanyPagerViewController.swift
 //  Mearcats
 //
 //  Created by 손은주 on 2017. 10. 28..
@@ -9,10 +9,12 @@
 import UIKit
 import XLPagerTabStrip
 
-class MyPageInnerPagerViewController: ButtonBarPagerTabStripViewController {
+class CompanyInnerPagerViewController: ButtonBarPagerTabStripViewController {
 
     let purpleInspireColor = UIColor(red: 212/255, green: 219/255, blue: 255/255, alpha: 1)
     let grayInspierColor = UIColor(red: 155/255, green: 155/255, blue: 155/255, alpha: 1)
+    
+    var index: Int?
     
     override func viewDidLoad() {
         // change selected bar color
@@ -36,14 +38,39 @@ class MyPageInnerPagerViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let index = self.index {
+            moveToViewController(at: index)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         
-        let favorite = UIStoryboard(name: "MyInfo", bundle: nil).instantiateViewController(withIdentifier: "FavoriteViewController") as! FavoriteViewController
+        let food = UIStoryboard(name: "Company", bundle: nil).instantiateViewController(withIdentifier: "FoodViewController") as! FoodViewController
         
-        let history = UIStoryboard(name: "MyInfo", bundle: nil).instantiateViewController(withIdentifier: "HistoryViewController") as! HistoryViewController
+        let clothes = UIStoryboard(name: "Company", bundle: nil).instantiateViewController(withIdentifier: "ClothesViewController") as! ClothesViewController
         
-        let basket = UIStoryboard(name: "MyInfo", bundle: nil).instantiateViewController(withIdentifier: "BasketViewController") as! BasketViewController
+        let cosmetics = UIStoryboard(name: "Company", bundle: nil).instantiateViewController(withIdentifier: "CosmeticsViewController") as! CosmeticsViewController
         
-        return [favorite, history, basket]
+        let medicine = UIStoryboard(name: "Company", bundle: nil).instantiateViewController(withIdentifier: "MedicineViewController") as! MedicineViewController
+        
+        let interior = UIStoryboard(name: "Company", bundle: nil).instantiateViewController(withIdentifier: "InteriorViewController") as! InteriorViewController
+        
+        return [food, clothes, cosmetics, medicine, interior]
     }
+
 }

@@ -60,15 +60,17 @@ class MainPageViewController: UIPageViewController {
         // The total number of pages that are available is based on how many available colors we have.
         
         pageControl = UIPageControl(frame: CGRect(x: 0,
-                                                  y: 50,
+                                                  y: 30,
                                                   width: UIScreen.main.bounds.width,
                                                   height: 50))
         
         self.pageControl.numberOfPages = orderedViewControllers.count
         self.pageControl.currentPage = 1
-        self.pageControl.tintColor = UIColor.black
-        self.pageControl.pageIndicatorTintColor = UIColor.red
-        self.pageControl.currentPageIndicatorTintColor = UIColor.black
+        
+        self.pageControl.tintColor = UIColor.white
+        self.pageControl.pageIndicatorTintColor = UIColor.white.withAlphaComponent(0.5)
+        
+        self.pageControl.currentPageIndicatorTintColor = UIColor.white
         self.view.addSubview(pageControl)
     }
 }

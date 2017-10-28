@@ -9,9 +9,19 @@
 import UIKit
 
 class MyPageViewController: UIViewController {
-
+    
+    @IBOutlet weak var settingButton: UIButton!
+    @IBOutlet weak var mailButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        customization()
     }
+    
+    func customization() {
+        settingButton.imageView?.contentMode = .scaleAspectFit
+        mailButton.imageView?.contentMode = .scaleAspectFit
+    }
+    
 }

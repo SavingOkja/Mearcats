@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45610A261FA4517C00C73415 /* CompanyInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */; };
+		45610A291FA4523F00C73415 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A281FA4523F00C73415 /* FoodViewController.swift */; };
+		45610A2B1FA4524C00C73415 /* ClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A2A1FA4524C00C73415 /* ClothesViewController.swift */; };
+		45610A2D1FA4525A00C73415 /* CosmeticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A2C1FA4525A00C73415 /* CosmeticsViewController.swift */; };
+		45610A2F1FA4526600C73415 /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A2E1FA4526600C73415 /* MedicineViewController.swift */; };
+		45610A311FA4527100C73415 /* InteriorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A301FA4527100C73415 /* InteriorViewController.swift */; };
+		45610A331FA4545700C73415 /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45610A321FA4545700C73415 /* Company.storyboard */; };
 		45A1B7AF1FA390B70084BB04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7AE1FA390B70084BB04 /* AppDelegate.swift */; };
 		45A1B7B11FA390B70084BB04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7B01FA390B70084BB04 /* LoginViewController.swift */; };
 		45A1B7B41FA390B70084BB04 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A1B7B21FA390B70084BB04 /* Login.storyboard */; };
@@ -26,6 +33,8 @@
 		45A1B7F61FA3A3CD0084BB04 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F51FA3A3CD0084BB04 /* BasketViewController.swift */; };
 		45A1B7F81FA3A3D70084BB04 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7F71FA3A3D70084BB04 /* QRViewController.swift */; };
 		45A1B7FC1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */; };
+		45A1B7FF1FA429F30084BB04 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7FE1FA429F30084BB04 /* UIViewExtension.swift */; };
+		45CE2E651FA45BC700D90CC4 /* CompanyPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CE2E641FA45BC700D90CC4 /* CompanyPagerViewController.swift */; };
 		69055991A7E6E611A0DE2AE0 /* Pods_MearcatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B2D9416A5AB92F45C012CD /* Pods_MearcatsTests.framework */; };
 		E9D1C155AB8162566C60382B /* Pods_Mearcats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AE05AA2B7A57321D218959 /* Pods_Mearcats.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +53,13 @@
 		24AE05AA2B7A57321D218959 /* Pods_Mearcats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mearcats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B2D9416A5AB92F45C012CD /* Pods_MearcatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MearcatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3358E9DD29B00DFF0EFA16F2 /* Pods-MearcatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MearcatsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests.release.xcconfig"; sourceTree = "<group>"; };
+		45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInnerPagerViewController.swift; sourceTree = "<group>"; };
+		45610A281FA4523F00C73415 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		45610A2A1FA4524C00C73415 /* ClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesViewController.swift; sourceTree = "<group>"; };
+		45610A2C1FA4525A00C73415 /* CosmeticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsViewController.swift; sourceTree = "<group>"; };
+		45610A2E1FA4526600C73415 /* MedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
+		45610A301FA4527100C73415 /* InteriorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteriorViewController.swift; sourceTree = "<group>"; };
+		45610A321FA4545700C73415 /* Company.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Company.storyboard; sourceTree = "<group>"; };
 		45A1B7AB1FA390B70084BB04 /* Mearcats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mearcats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A1B7AE1FA390B70084BB04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A1B7B01FA390B70084BB04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +83,8 @@
 		45A1B7F51FA3A3CD0084BB04 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		45A1B7F71FA3A3D70084BB04 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageInnerPagerViewController.swift; sourceTree = "<group>"; };
+		45A1B7FE1FA429F30084BB04 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		45CE2E641FA45BC700D90CC4 /* CompanyPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPagerViewController.swift; sourceTree = "<group>"; };
 		5CD1E31BAE1A785B118FF453 /* Pods-MearcatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MearcatsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MearcatsTests/Pods-MearcatsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9172B52FC4F293A8D078B0B6 /* Pods-Mearcats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mearcats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats.debug.xcconfig"; sourceTree = "<group>"; };
 		F3E7C6AFE275A5C8EF3CD856 /* Pods-Mearcats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mearcats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mearcats/Pods-Mearcats.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +121,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		45610A271FA4522F00C73415 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				45610A281FA4523F00C73415 /* FoodViewController.swift */,
+				45610A2A1FA4524C00C73415 /* ClothesViewController.swift */,
+				45610A2C1FA4525A00C73415 /* CosmeticsViewController.swift */,
+				45610A2E1FA4526600C73415 /* MedicineViewController.swift */,
+				45610A301FA4527100C73415 /* InteriorViewController.swift */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
 		45A1B7A21FA390B70084BB04 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +159,7 @@
 				45A1B7B71FA390B70084BB04 /* LaunchScreen.storyboard */,
 				45A1B7AE1FA390B70084BB04 /* AppDelegate.swift */,
 				45A1B7B51FA390B70084BB04 /* Assets.xcassets */,
+				45A1B7FD1FA429E50084BB04 /* Extension */,
 				45A1B7CF1FA392B60084BB04 /* Storyboard */,
 				45A1B7CE1FA3929F0084BB04 /* ViewController */,
 				45A1B7BA1FA390B70084BB04 /* Info.plist */,
@@ -148,6 +179,7 @@
 		45A1B7CE1FA3929F0084BB04 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				45610A271FA4522F00C73415 /* Company */,
 				45A1B7F01FA3A2980084BB04 /* QR */,
 				45A1B7EF1FA3A2900084BB04 /* MyInfo */,
 				45A1B7D81FA39AB60084BB04 /* Main */,
@@ -164,6 +196,7 @@
 				45A1B7D01FA394F00084BB04 /* Main.storyboard */,
 				45A1B7D41FA3991D0084BB04 /* MyInfo.storyboard */,
 				45A1B7D61FA399440084BB04 /* QR.storyboard */,
+				45610A321FA4545700C73415 /* Company.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -176,6 +209,8 @@
 				45A1B7DF1FA39B9E0084BB04 /* ClassificationViewController.swift */,
 				45A1B7E11FA39BD80084BB04 /* CompanyViewController.swift */,
 				45A1B7FB1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift */,
+				45610A251FA4517C00C73415 /* CompanyInnerPagerViewController.swift */,
+				45CE2E641FA45BC700D90CC4 /* CompanyPagerViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -196,6 +231,14 @@
 				45A1B7F71FA3A3D70084BB04 /* QRViewController.swift */,
 			);
 			path = QR;
+			sourceTree = "<group>";
+		};
+		45A1B7FD1FA429E50084BB04 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				45A1B7FE1FA429F30084BB04 /* UIViewExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		868A8B3BF82CFBE337E2E51B /* Frameworks */ = {
@@ -296,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45610A331FA4545700C73415 /* Company.storyboard in Resources */,
 				45A1B7B91FA390B70084BB04 /* LaunchScreen.storyboard in Resources */,
 				45A1B7D71FA399440084BB04 /* QR.storyboard in Resources */,
 				45A1B7B61FA390B70084BB04 /* Assets.xcassets in Resources */,
@@ -422,14 +466,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A1B7F61FA3A3CD0084BB04 /* BasketViewController.swift in Sources */,
+				45610A2D1FA4525A00C73415 /* CosmeticsViewController.swift in Sources */,
+				45610A291FA4523F00C73415 /* FoodViewController.swift in Sources */,
 				45A1B7FC1FA3A44C0084BB04 /* MyPageInnerPagerViewController.swift in Sources */,
+				45610A311FA4527100C73415 /* InteriorViewController.swift in Sources */,
 				45A1B7DE1FA39B2C0084BB04 /* MyPageViewController.swift in Sources */,
 				45A1B7B11FA390B70084BB04 /* LoginViewController.swift in Sources */,
+				45610A2F1FA4526600C73415 /* MedicineViewController.swift in Sources */,
 				45A1B7E01FA39B9E0084BB04 /* ClassificationViewController.swift in Sources */,
 				45A1B7D31FA3956E0084BB04 /* MainPageViewController.swift in Sources */,
+				45610A2B1FA4524C00C73415 /* ClothesViewController.swift in Sources */,
+				45610A261FA4517C00C73415 /* CompanyInnerPagerViewController.swift in Sources */,
 				45A1B7AF1FA390B70084BB04 /* AppDelegate.swift in Sources */,
 				45A1B7E21FA39BD80084BB04 /* CompanyViewController.swift in Sources */,
 				45A1B7F41FA3A3C30084BB04 /* HistoryViewController.swift in Sources */,
+				45A1B7FF1FA429F30084BB04 /* UIViewExtension.swift in Sources */,
+				45CE2E651FA45BC700D90CC4 /* CompanyPagerViewController.swift in Sources */,
 				45A1B7F81FA3A3D70084BB04 /* QRViewController.swift in Sources */,
 				45A1B7F21FA3A2C80084BB04 /* FavoriteViewController.swift in Sources */,
 				45A1B7DC1FA39AF10084BB04 /* HomeViewController.swift in Sources */,
