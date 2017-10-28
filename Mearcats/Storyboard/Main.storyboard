@@ -339,9 +339,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99j-v0-9lt">
+                                <rect key="frame" x="339" y="36" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="VqQ-86-jHh"/>
+                                    <constraint firstAttribute="width" constant="20" id="hvX-dh-i0o"/>
+                                </constraints>
+                                <state key="normal" image="cancel-x"/>
+                                <connections>
+                                    <action selector="cancelAction:" destination="n2i-NR-q2e" eventType="touchUpInside" id="wQk-jY-XDh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="FpT-Bl-16y" firstAttribute="trailing" secondItem="99j-v0-9lt" secondAttribute="trailing" constant="16" id="0t6-vN-pct"/>
+                            <constraint firstItem="99j-v0-9lt" firstAttribute="top" secondItem="FpT-Bl-16y" secondAttribute="top" constant="16" id="26o-wF-xe4"/>
                             <constraint firstItem="sBR-JA-jls" firstAttribute="trailing" secondItem="FpT-Bl-16y" secondAttribute="trailing" id="Btx-ml-OVe"/>
                             <constraint firstItem="skt-Yz-Qm0" firstAttribute="trailing" secondItem="FpT-Bl-16y" secondAttribute="trailing" id="F08-Lb-dAG"/>
                             <constraint firstItem="sBR-JA-jls" firstAttribute="leading" secondItem="FpT-Bl-16y" secondAttribute="leading" id="GaG-LM-sa8"/>
@@ -382,6 +395,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="wYv-zh-NaT"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddh-f5-udB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -391,6 +405,7 @@
     </scenes>
     <resources>
         <image name="bg" width="375" height="667"/>
+        <image name="cancel-x" width="256" height="256"/>
         <image name="settings" width="39" height="40"/>
         <image name="shape" width="37" height="30"/>
     </resources>

@@ -15,4 +15,7 @@ class CompanyPagerViewController: UIViewController {
 
     }
 
+    @IBAction func cancelAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
