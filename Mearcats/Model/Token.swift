@@ -12,9 +12,9 @@ import Realm
 import RealmSwift
 
 class TokenResult: Object, Mappable{
-    @objc var result: Bool = false
-    @objc var msg: String = ""
-    @objc var token: String = ""
+    @objc dynamic var result: Bool = false
+    @objc dynamic var msg: String = ""
+    @objc dynamic var token: String = ""
     
     required convenience init?(map: Map) {
         self.init()

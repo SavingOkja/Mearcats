@@ -12,7 +12,7 @@ import ObjectMapper
 class MemberResult: Mappable {
     var result: Bool = false
     var msg: String = ""
-    var data: [Member]?
+    var member: [Member]?
     
     required convenience init?(map: Map) {
         self.init()
@@ -21,20 +21,18 @@ class MemberResult: Mappable {
     func mapping(map: Map) {
         result <- map["result"]
         msg <- map["msg"]
-        data <- map["data"]
+        member <- map["data"]
     }
 }
 
 class Member: Mappable {
-    var name: String = ""
-    var id: Int = 0
+    var img: String = ""
     
     required convenience init?(map: Map) {
         self.init()
     }
     
     func mapping(map: Map) {
-        name <- map["name"]
-        id <- map["id"]
+        img <- map["img"]
     }
 }

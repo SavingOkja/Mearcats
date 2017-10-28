@@ -17,20 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eEm-4m-HuK">
-                                <rect key="frame" x="50.5" y="180" width="274" height="247"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="4PB-5q-wAI">
+                                <rect key="frame" x="37.5" y="166.5" width="300" height="274"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meerkatLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gNB-Ze-r6E">
-                                        <rect key="frame" x="36" y="0.0" width="202" height="34"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meerkatLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yhq-q0-2q0">
+                                        <rect key="frame" x="35" y="0.0" width="230" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="202" id="4JQ-sC-tGA"/>
-                                            <constraint firstAttribute="height" constant="34" id="YYS-3g-Alb"/>
+                                            <constraint firstAttribute="width" constant="230" id="0sv-Xz-ubh"/>
+                                            <constraint firstAttribute="height" constant="34" id="1OF-WQ-6qA"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meerchatDrawing" translatesAutoresizingMaskIntoConstraints="NO" id="7aN-Do-6oD">
-                                        <rect key="frame" x="0.0" y="74" width="274" height="173"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meerchatDrawing" translatesAutoresizingMaskIntoConstraints="NO" id="gzn-Dc-GfE">
+                                        <rect key="frame" x="0.0" y="74" width="300" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="274" id="GPY-As-TPQ"/>
+                                            <constraint firstAttribute="height" constant="200" id="WEK-iz-lkY"/>
+                                            <constraint firstAttribute="width" constant="300" id="iFn-Z8-MMC"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -38,8 +39,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eEm-4m-HuK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="Vyk-Tm-f3n"/>
-                            <constraint firstItem="eEm-4m-HuK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cvw-Sg-C9Q"/>
+                            <constraint firstItem="4PB-5q-wAI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RWO-QC-UsX"/>
+                            <constraint firstItem="4PB-5q-wAI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="d1O-Vp-GKB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -24,16 +24,6 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
-        let realm = try! Realm()
-        if let token = realm.objects(TokenResult.self).first {
-            
-            print("token exist: \(token)")
-        } else {
-            
-            print("token not exist.")
-        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -63,8 +53,8 @@ class HomeViewController: UIViewController {
     @IBAction func qrAction(_ sender: UIButton) {
         
         let alert = UIAlertController(
-            title: "Select!",
-            message: "message",
+            title: nil,
+            message: nil,
             preferredStyle: .actionSheet)
         
         let cameraAction = UIAlertAction(title: "Camera",

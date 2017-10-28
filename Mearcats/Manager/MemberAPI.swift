@@ -36,11 +36,13 @@ extension HTTPManager {
         }
     }
     
-    public func getMember(with token: Int,
+    public func getMember(with token: String,
                           completion: @escaping (Result<MemberResult>) -> Void) {
         
         let url = "\(baseUrlString)/mearcats/ios/member?id=\(token)"
         let headers = header(type: .json)
+        
+        print(url)
         
         Alamofire.request(url,
                           method: .get,

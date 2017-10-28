@@ -41,13 +41,20 @@ class ClassificationViewController: UIViewController,
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 16
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClassificationCollectionViewCell", for: indexPath) as! ClassificationCollectionViewCell
         
-        cell.imageView.image = UIImage(named: "group2")
+        switch indexPath.row {
+        case 0:  cell.imageView.image = UIImage(named: "foodIc")
+        case 1:  cell.imageView.image = UIImage(named: "clothesIc")
+        case 2:  cell.imageView.image = UIImage(named: "cosmeitcsIc")
+        case 3:  cell.imageView.image = UIImage(named: "medicineIc")
+        case 4:  cell.imageView.image = UIImage(named: "interiorIc")
+        default: cell.imageView.image = UIImage(named: "group2")
+        }
         
         return cell
         

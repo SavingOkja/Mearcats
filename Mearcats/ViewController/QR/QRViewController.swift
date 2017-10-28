@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Presentr
 
 class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate{
     
@@ -150,12 +151,27 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
         
     }
 
+    @IBAction func settingAction(_ sender: UIButton) {
+        
+        let presentr = Presentr(presentationType: .custom(
+            width: ModalSize.custom(size: Float(320)),
+            height: ModalSize.custom(size: Float(570)),
+            center: ModalCenterPosition.custom(
+                centerPoint: CGPoint(
+                    x: UIScreen.main.bounds.width/2,
+                    y: UIScreen.main.bounds.height/2
+            ))
+            )
+        )
+        
+        let picker = UIStoryboard(name: "Company", bundle: nil).instantiateViewController(withIdentifier: "SurveyPickerViewController") as! SurveyPickerViewController
+        
+        self.customPresentViewController(presentr, viewController: picker, animated: true, completion: nil)
+    }
 }
 
 extension QRViewController {
-    
-    
-    
+
     func customizatino() {
         anotherCancelButton.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
     }

@@ -36,15 +36,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="111" height="152"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-7o-IKg">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mblogthumb3PhinfNaver" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-7o-IKg">
                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
-                                                    <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="SUP-7o-IKg" secondAttribute="height" multiplier="1:1" id="uvk-Lg-Zqa"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgd-F6-q5d">
-                                                    <rect key="frame" x="27.5" y="116" width="57.5" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Innisfree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgd-F6-q5d">
+                                                    <rect key="frame" x="30" y="116" width="52.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -311,5 +310,6 @@
     </scenes>
     <resources>
         <image name="group3" width="507" height="88"/>
+        <image name="mblogthumb3PhinfNaver" width="94" height="94"/>
     </resources>
 </document>

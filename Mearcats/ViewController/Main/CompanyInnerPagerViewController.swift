@@ -11,7 +11,7 @@ import XLPagerTabStrip
 
 class CompanyInnerPagerViewController: ButtonBarPagerTabStripViewController {
 
-    let purpleInspireColor = UIColor(red: 212/255, green: 219/255, blue: 255/255, alpha: 1)
+    let purpleInspireColor = UIColor(red: 212/255, green: 129/255, blue: 255/255, alpha: 1)
     let grayInspierColor = UIColor(red: 155/255, green: 155/255, blue: 155/255, alpha: 1)
     
     var index: Int?

@@ -13,6 +13,7 @@ class SurveyPickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.layer.cornerRadius = 30
     }
     
     @IBAction func closeAction(_ sender: UIButton) {
