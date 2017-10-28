@@ -11,6 +11,9 @@ target 'Mearcats' do
   pod 'Alamofire'
   pod 'AlamofireObjectMapper'
   pod 'ObjectMapper'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
   target 'MearcatsTests' do
     inherit! :search_paths

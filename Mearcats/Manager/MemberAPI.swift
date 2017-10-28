@@ -13,15 +13,37 @@ import Alamofire
 
 extension HTTPManager {
     
-    public func getMembers(completion: @escaping (Result<AllAlbums>) -> Void) {
+    public func login(with fbtoken: String,
+                      imageURL: String,
+                      completion: @escaping (Result<TokenResult>) -> Void) {
         
-        let url = "\(baseUrlString)/history/student/album/main/"
+        let url = "\(baseUrlString)/mearcats/ios/member"
+        let headers = header(type: .json)
+        let params = [
+            "facebookToken":fbtoken,
+            "img": imageURL
+        ]
+        
+        Alamofire.request(url,
+                          method: .post,
+                          parameters: params,
+                          encoding: JSONEncoding.default,
+                          headers: headers)
+            .responseObject { (response: DataResponse<TokenResult>) in
+                completion(response.result)
+        }
+    }
+    
+    public func getMember(with token: Int,
+                          completion: @escaping (Result<MemberResult>) -> Void) {
+        
+        let url = "\(baseUrlString)/mearcats/ios/member?id=\(token)"
         let headers = header(type: .json)
         
         Alamofire.request(url,
                           method: .get,
                           headers: headers)
-            .responseObject { (response: DataResponse<AllAlbums>) in
+            .responseObject { (response: DataResponse<MemberResult>) in
                 completion(response.result)
         }
         

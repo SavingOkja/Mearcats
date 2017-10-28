@@ -3,21 +3,56 @@ PODS:
   - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FacebookCore (0.3.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.27)
+  - FacebookLogin (0.3.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3)
+    - FBSDKCoreKit (~> 4.27)
+    - FBSDKLoginKit (~> 4.27)
+  - FacebookShare (0.3.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3)
+    - FBSDKCoreKit (~> 4.27)
+    - FBSDKShareKit (~> 4.27)
+  - FBSDKCoreKit (4.27.1):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.27.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.27.1):
+    - FBSDKCoreKit
   - ObjectMapper (3.0.0)
   - XLPagerTabStrip (8.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
   - ObjectMapper
   - XLPagerTabStrip (~> 8.0)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
+  FacebookLogin: 0af839ea858faef99550d16596b87b4a8e8906e6
+  FacebookShare: 0469964297ebd75f052be2c5083389a4208e82b7
+  FBSDKCoreKit: 03365dad5d790249196ffad8be4f6d8a2d98f932
+  FBSDKLoginKit: 66ff53b73cffd967ab773e32fac39e90a60e6d46
+  FBSDKShareKit: 6a6a0ef9e850c741e4e1d7a7d21335205e997ec1
   ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
 
-PODFILE CHECKSUM: d9435f9a035c84755ebbce13d630735704c2c3c0
+PODFILE CHECKSUM: 5390916f97ebc8212fcd5f066bef9d60a7819cf8
 
 COCOAPODS: 1.3.1
