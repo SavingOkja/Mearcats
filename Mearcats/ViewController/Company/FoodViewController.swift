@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class FoodViewController: UIViewController {
+class FoodViewController: UIViewController, IndicatorInfoProvider {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return "Food"
     }
 }

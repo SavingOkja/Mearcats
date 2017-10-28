@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class CosmeticsViewController: UIViewController {
+class CosmeticsViewController: UIViewController, IndicatorInfoProvider{
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return "Cosmetics"
     }
 }

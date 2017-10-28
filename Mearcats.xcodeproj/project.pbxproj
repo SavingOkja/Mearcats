@@ -13,6 +13,7 @@
 		45610A2D1FA4525A00C73415 /* CosmeticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A2C1FA4525A00C73415 /* CosmeticsViewController.swift */; };
 		45610A2F1FA4526600C73415 /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A2E1FA4526600C73415 /* MedicineViewController.swift */; };
 		45610A311FA4527100C73415 /* InteriorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45610A301FA4527100C73415 /* InteriorViewController.swift */; };
+		45610A331FA4545700C73415 /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45610A321FA4545700C73415 /* Company.storyboard */; };
 		45A1B7AF1FA390B70084BB04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7AE1FA390B70084BB04 /* AppDelegate.swift */; };
 		45A1B7B11FA390B70084BB04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1B7B01FA390B70084BB04 /* LoginViewController.swift */; };
 		45A1B7B41FA390B70084BB04 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A1B7B21FA390B70084BB04 /* Login.storyboard */; };
@@ -57,6 +58,7 @@
 		45610A2C1FA4525A00C73415 /* CosmeticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsViewController.swift; sourceTree = "<group>"; };
 		45610A2E1FA4526600C73415 /* MedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
 		45610A301FA4527100C73415 /* InteriorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteriorViewController.swift; sourceTree = "<group>"; };
+		45610A321FA4545700C73415 /* Company.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Company.storyboard; sourceTree = "<group>"; };
 		45A1B7AB1FA390B70084BB04 /* Mearcats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mearcats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A1B7AE1FA390B70084BB04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A1B7B01FA390B70084BB04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				45A1B7D01FA394F00084BB04 /* Main.storyboard */,
 				45A1B7D41FA3991D0084BB04 /* MyInfo.storyboard */,
 				45A1B7D61FA399440084BB04 /* QR.storyboard */,
+				45610A321FA4545700C73415 /* Company.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45610A331FA4545700C73415 /* Company.storyboard in Resources */,
 				45A1B7B91FA390B70084BB04 /* LaunchScreen.storyboard in Resources */,
 				45A1B7D71FA399440084BB04 /* QR.storyboard in Resources */,
 				45A1B7B61FA390B70084BB04 /* Assets.xcassets in Resources */,

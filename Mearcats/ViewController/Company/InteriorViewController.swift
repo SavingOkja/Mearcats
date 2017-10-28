@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class InteriorViewController: UIViewController {
+class InteriorViewController: UIViewController, IndicatorInfoProvider{
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return "Interior"
+    }
+    
 }
