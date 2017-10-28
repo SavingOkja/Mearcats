@@ -36,6 +36,17 @@
                                     <constraint firstAttribute="width" constant="100" id="LML-CV-RC4"/>
                                     <constraint firstAttribute="height" constant="100" id="rY7-a3-1i3"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="iBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iBorderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iCornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLE-jI-Whf">
                                 <rect key="frame" x="0.0" y="260" width="375" height="407"/>
@@ -367,7 +378,7 @@
     </scenes>
     <resources>
         <image name="bg" width="375" height="667"/>
-        <image name="settings" width="26" height="27"/>
-        <image name="shape" width="25" height="20"/>
+        <image name="settings" width="39" height="40"/>
+        <image name="shape" width="37" height="30"/>
     </resources>
 </document>

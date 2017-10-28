@@ -66,9 +66,11 @@ class MainPageViewController: UIPageViewController {
         
         self.pageControl.numberOfPages = orderedViewControllers.count
         self.pageControl.currentPage = 1
-        self.pageControl.tintColor = UIColor.black
-        self.pageControl.pageIndicatorTintColor = UIColor.red
-        self.pageControl.currentPageIndicatorTintColor = UIColor.black
+        
+        self.pageControl.tintColor = UIColor.white
+        self.pageControl.pageIndicatorTintColor = UIColor.white.withAlphaComponent(0.5)
+        
+        self.pageControl.currentPageIndicatorTintColor = UIColor.white
         self.view.addSubview(pageControl)
     }
 }
