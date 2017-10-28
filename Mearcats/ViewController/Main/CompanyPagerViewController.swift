@@ -1,5 +1,5 @@
 //
-//  MyPageInnerPagerViewController.swift
+//  CompanyPagerViewController.swift
 //  Mearcats
 //
 //  Created by 손은주 on 2017. 10. 28..
@@ -9,7 +9,7 @@
 import UIKit
 import XLPagerTabStrip
 
-class MyPageInnerPagerViewController: ButtonBarPagerTabStripViewController {
+class CompanyPagerViewController: ButtonBarPagerTabStripViewController {
 
     let purpleInspireColor = UIColor(red: 212/255, green: 219/255, blue: 255/255, alpha: 1)
     let grayInspierColor = UIColor(red: 155/255, green: 155/255, blue: 155/255, alpha: 1)
@@ -46,4 +46,5 @@ class MyPageInnerPagerViewController: ButtonBarPagerTabStripViewController {
         
         return [favorite, history, basket]
     }
+
 }
