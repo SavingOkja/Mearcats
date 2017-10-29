@@ -69,7 +69,12 @@ class FoodViewController: UIViewController,
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoriteCollectionViewCell", for: indexPath) as! FavoriteCollectionViewCell
         
-        cell.imageView.image = UIImage(named: "mblogthumb3PhinfNaver")
+        if let last = item.name.split(separator: " ").last, last == "farm" {
+            cell.imageView.image = UIImage(named: "Geumseong")
+        } else {
+            cell.imageView.image = UIImage(named: "mblogthumb3PhinfNaver")
+        }
+        
         cell.companyLabel.text = item.name
         
         return cell

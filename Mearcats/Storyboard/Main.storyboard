@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -205,13 +206,25 @@
                                     <action selector="qrAction:" destination="HZP-IS-sIM" eventType="touchUpInside" id="tZg-ki-4Kj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV1-MD-PCB">
+                                <rect key="frame" x="325" y="607" width="50" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="B6D-vS-pN7"/>
+                                    <constraint firstAttribute="width" constant="50" id="DnG-Gj-0zo"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="removeToken:" destination="HZP-IS-sIM" eventType="touchUpInside" id="XpQ-W7-pll"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="v3I-f1-eDa" firstAttribute="trailing" secondItem="Nmw-gD-gOG" secondAttribute="trailing" constant="23" id="1m7-l8-ZGP"/>
+                            <constraint firstItem="NV1-MD-PCB" firstAttribute="trailing" secondItem="v3I-f1-eDa" secondAttribute="trailing" id="20b-Wr-QNm"/>
                             <constraint firstItem="Nvs-6Z-VSR" firstAttribute="bottom" secondItem="v3I-f1-eDa" secondAttribute="bottom" id="B3R-e1-O87"/>
                             <constraint firstItem="Nvs-6Z-VSR" firstAttribute="leading" secondItem="v3I-f1-eDa" secondAttribute="leading" id="CNX-lZ-PkK"/>
                             <constraint firstItem="OMO-BJ-YbL" firstAttribute="top" secondItem="2Le-pr-BQj" secondAttribute="bottom" constant="60" id="EK2-K6-os9"/>
+                            <constraint firstItem="NV1-MD-PCB" firstAttribute="bottom" secondItem="v3I-f1-eDa" secondAttribute="bottom" id="Fgi-G4-4Kv"/>
                             <constraint firstItem="OMO-BJ-YbL" firstAttribute="centerY" secondItem="77x-0k-3R0" secondAttribute="centerY" id="HEY-an-ki6"/>
                             <constraint firstItem="ITu-pM-Wzt" firstAttribute="centerX" secondItem="OMO-BJ-YbL" secondAttribute="centerX" id="Juu-cA-NWT"/>
                             <constraint firstItem="OMO-BJ-YbL" firstAttribute="centerX" secondItem="77x-0k-3R0" secondAttribute="centerX" id="RHP-pX-8zi"/>
@@ -451,6 +464,7 @@
                     </view>
                     <connections>
                         <outlet property="emptyView" destination="pW8-9h-ze8" id="q20-Sq-dCk"/>
+                        <outlet property="searchBar" destination="tMD-8K-bs9" id="SRM-Sb-8CY"/>
                         <outlet property="tableView" destination="3WL-SZ-qnh" id="AvD-Zf-uia"/>
                     </connections>
                 </viewController>

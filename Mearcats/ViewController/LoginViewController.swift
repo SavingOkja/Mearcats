@@ -62,10 +62,11 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func login(with fbtoken: String, imageURL: String) {
+    func login(with fbtoken: String, imageURL: String, email: String) {
         
         manager.login(with: fbtoken,
-                      imageURL: imageURL)
+                      imageURL: imageURL,
+                      email: email)
         { result in
             
             switch result {
@@ -103,10 +104,10 @@ class LoginViewController: UIViewController {
                             case .success(_, _, let accessToken):
                                 guard let userId = accessToken.userId else { return }
                                 
-                                self.login(
-                                    with: accessToken.authenticationToken,
-                                   imageURL: "http://graph.facebook.com/\(userId)/picture?type=large"
-                                )
+                                self.login(with: accessToken.authenticationToken,
+                                           imageURL: "http://graph.facebook.com/\(userId)/picture?type=large",
+                                           email: "\(userId)@naver.com")
+
                                 
                             case .failed(let error):
                                 

@@ -15,13 +15,15 @@ extension HTTPManager {
     
     public func login(with fbtoken: String,
                       imageURL: String,
+                      email: String,
                       completion: @escaping (Result<TokenResult>) -> Void) {
         
         let url = "\(baseUrlString)/mearcats/ios/member"
         let headers = header(type: .json)
         let params = [
             "facebookToken":fbtoken,
-            "img": imageURL
+            "img": imageURL,
+            "mail": email
         ]
         
         print(params)

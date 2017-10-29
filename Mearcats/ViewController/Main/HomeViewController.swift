@@ -82,4 +82,16 @@ class HomeViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
+    
+    @IBAction func removeToken(_ sender: UIButton) {
+        let realm = try! Realm()
+        
+        if let token = realm.objects(TokenResult.self).first {
+            
+            try! realm.write {
+                realm.delete(token)
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+    }
 }

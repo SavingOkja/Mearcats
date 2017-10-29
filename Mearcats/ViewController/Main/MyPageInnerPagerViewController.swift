@@ -17,8 +17,11 @@ class MyPageInnerPagerViewController: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         // change selected bar color
         settings.style.buttonBarBackgroundColor = .white
+        
         settings.style.buttonBarItemBackgroundColor = .white
         settings.style.selectedBarBackgroundColor = purpleInspireColor
+        settings.style.buttonBarBackgroundColor = grayInspierColor
+        
         settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 18)
         settings.style.buttonBarHeight = 50
         settings.style.selectedBarHeight = 2.0

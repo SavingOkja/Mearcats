@@ -38,7 +38,7 @@ class HistoryViewController: UIViewController,
             switch result {
             case .success(let value):
                 
-                self.companies =  value.companies
+                self.companies =  value.companies.filter { $0.id % 3 == 0 }.sorted { $0.id < $1.id }
                 self.tableView.reloadData()
             case .failure(let error):
                 
@@ -65,11 +65,15 @@ class HistoryViewController: UIViewController,
         let item = companies[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell") as! HistoryTableViewCell
         
-        cell.productImageView.image = UIImage(named: "mblogthumb3PhinfNaver")
+        if let last = item.name.split(separator: " ").last, last == "farm" {
+            cell.productImageView.image = UIImage(named: "Geumseong")
+        } else {
+            cell.productImageView.image = UIImage(named: "mblogthumb3PhinfNaver")
+        }
+    
         cell.productLabel.text = item.name
         cell.companyLabel.text = ""
-        
-        
+        cell.dateLabel.text = "2017.10.28"
         
         return cell
     }
